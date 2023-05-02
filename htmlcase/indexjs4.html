@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JavaScript-це ♥ HTMLcase</title>
+</head>
+<body>
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo2.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username" required><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px;" class='submit'>
+                  </form>
+                <p class='warn'><span>Щоб перейти потрібно увійти.</span></p>
+            </div>
+            <div class="modal-footer" style="color: #262626;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="registration.html" style="text-decoration: none; font-weight: 700;color: #721aba;">Зареєструйтеся</a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827">
+                            <a href="indexhtml.html" aria-current="page">HTML</a></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                            <li><span style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-family: 'Arimo', sans-serif;
+                            font-weight: bold;
+                            transition:.3s linear;
+                            cursor: pointer;">
+                                JS<span></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    <div class="container">
+        <div class="jstitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Масиви</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Базові поняття. Що таке "масив"? "var myArray"?</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+<p>Масиви використовуються для того, щоб зберегти декілька значень в одній змінній. Значення елементів масиву можуть бути різних типів.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Приклади</p>
+<div class="ex" style="line-height:5px;" >
+<p>var myArray1 = [];</p>
+<p></p>
+<p>var myArray2 = [1, 2, 3, 4];</p>
+<p></p>
+<p>var myArray3 = [1, 'text', 3, 0, 'ghjghgj'];</p>
+<p></p>
+<p>var myArray4 = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];</p>
+<p></p>
+<p>var myArray5 = [1, 2, , 4];</p>
+<p></p>
+<p></p>
+<p>myArray2 [1] = 333; // другий елемент масиву = 333, тобто myArray2 = [1, 333, 3, 4];</p>
+<p></p>
+<p>myArray2 [7] = 5; // отримаєм myArray2 = [1, 333, 3, 4, undefined, undefined, undefined, 5];</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>console.log (myArray); // виведе в консоль масив myArray</p>
+<p></p>
+<p>console.log (myArray[2]); // виведе в консоль 3 елемент масиву myArray</p>
+<p></p>
+<p>console.dir (myArray); // також виведе в консоль масив myArray, але більш відформатовано</p>
+</div>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">Методи масиву</span></p>
+<p> </p>
+<p></p>
+<p>length - довжина масиву</p>
+<div class="ex" style="line-height:5px;" >
+<p>console.log (myArray.length); // виведе в консоль довжину масиву myArray</p>
+</div>
+<p> </p>
+<p></p>
+<p>Змінні типу <span  style="font-weight: 550;">string</span> - це теж масив</p>
+<div class="ex" style="line-height:5px;" >
+<p>var myString ='text about me';</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>console.log (myString [3]); // x</p>
+<p></p>
+<p>console.log (myString.length) // 13 пробіли теж рахує</p>
+</div>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">join ()</span> - перетворює елементи масиву у стрічку</p>
+<div class="ex" style="line-height:5px;" >
+<p>var str = myArray2.join ();</p>
+<p></p>
+<p>console.log (str); // 1,2,3,4</p>
+</div>
+<p></p>
+<p>Може при цьому розділяти елементи масиву заданими символами.</p>
+<div class="ex" style="line-height:5px;" >
+<p>var str = myArray2.join ('bla');</p>
+<p></p>
+<p>console.log (str); // 1bla2bla3bla4</p>
+</div>
+<p></p>
+<p><span  style="font-weight: 550;">sort</span> - сортує алементи масиву в алфавітному порядку</p>
+<div class="ex" style="line-height:5px;" >
+<p>var myArray5 = ['Marta', 'Alina', 'Olga'];</p>
+<p></p>
+<p>myArray5.sort ();</p>
+<p></p>
+<p>console.log (myArray5); // ['Alina', 'Marta', 'Olga']</p>
+</div>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">reverse</span> - сортує елементи масиву у зворотньому порядку</p>
+<div class="ex" style="line-height:5px;" >
+<p>var myArray5 = ['Marta', 'Alina', 'Olga'];</p>
+<p></p>
+<p>myArray5.reverse ();</p>
+<p></p>
+<p>console.log (myArray5); // ["Olga", "Alina", "Marta"]</p>
+</div>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">slice ()</span> - витягає з миву потрібні еласементи</p>
+<div class="ex" style="line-height:5px;" >
+<p>var myArray6 = ['Marta', 'Alina', 'Olga', 'Oksana', 'Ira'];</p>
+<p></p>
+<p>var myNewArray6=myArray6.slice (1, 3);</p>
+<p></p>
+<p>//вибере елемети масиву від другого до четвертого, невключаючи четвертий (елемент з індексом1, елемент з індексом2)</p>
+<p></p>
+<p>console.log (myNewArray6); // ["Alina", "Olga"]</p>
+</div>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">splice ()</span>- видаляє з масиву вказані елементи (та/або вставляє)</p>
+<div class="ex" style="line-height:5px;" >
+<p>var myArray6 = ['Marta', 'Alina', 'Olga', 'Oksana', 'Ira'];</p>
+<p></p>
+<p>myArray6.splice (0, 2); //видаляє два елемети масиву, починаючи від першого (елемент з індексом0, елемент з індексом1)</p>
+<p></p>
+<p>console.log (myArray6); // ["Olga", "Oksana", "Ira"]</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>var myArray7 = ['Marta', 'Alina', 'Olga', 'Oksana', 'Ira'];</p>
+<p></p>
+<p>myArray7.splice (1, 3, 'Olena', 'Marija'); //видаляє три елемети масиву, починаючи від другого та додає замість них нові елементи</p>
+<p></p>
+<p>console.log (myArray7); // ["Marta", "Olena", "Marija", "Ira"]</p>
+</div>
+<p> </p>
+<p></p>
+<p> </p>
+<ul class="jsul"><span  style="font-weight: 550;">Додавання та видалення елементів массиву:</span>
+<p></p>
+<p> </p>
+<p></p>
+<li>push () – додає елемент або кілька елементів в кінець масиву і повертає його нову довжину</li>
+<p></p>
+<li>pop () – видаляє елемент або кілька елементів з кінця масиву і повертає його нову довжину</li>
+<p></p>
+<li>unshift () – додає елемент або кілька елементів на початок масиву і повертає його нову довжину</li>
+<p></p>
+<li>shift () – видаляє елемент або кілька елементів з початку масиву і повертає його нову довжину</li>
+</ul>  
+ 
+
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul class="list2b">
+          
+        <li><a href="indexjs.html">Про JavaScript</a></li>
+        <li><a href="indexjs2.html">Змінні</a></li>
+        <li><a href="indexjs3.html">Типи даних</a></li>
+        <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Масиви</a></li>
+        <li><a href="indexjs5.html">Арифметика. Присвоєння</a></li>
+        <li><a href="indexjs6.html">Взаємодія з користувачем</a></li>
+        <li><a href="indexjs7.html">Умови</a></li>
+        <li><a href="indexjs8.html">Цикли</a></li>
+        <li><a href="indexjs9.html">Функції. Область видимості</a></li>
+        <li><a href="indexjs10.html">DOM</a></li>
+        <li><a href="indexjs11.html">Події</a></li>
+        <li><a href="indexjs12.html">jQuery</a></li>
+
+        </ul>
+    </div>
+</main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexjs4.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexjs4.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+        <a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>

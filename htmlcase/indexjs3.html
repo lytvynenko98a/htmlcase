@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JavaScript-це ♥ HTMLcase</title>
+</head>
+<body>
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo2.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username" required><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px;" class='submit'>
+                  </form>
+                <p class='warn'><span>Щоб перейти потрібно увійти.</span></p>
+            </div>
+            <div class="modal-footer" style="color: #262626;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="registration.html" style="text-decoration: none; font-weight: 700;color: #721aba;">Зареєструйтеся</a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827">
+                            <a href="indexhtml.html" aria-current="page">HTML</a></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                            <li><span style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-family: 'Arimo', sans-serif;
+                            font-weight: bold;
+                            transition:.3s linear;
+                            cursor: pointer;">
+                                JS<span></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    <div class="container">
+        <div class="jstitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Типи даних</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Базові поняття. Що таке "змінна"? "var message"?</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+
+            
+ 
+
+            <p></p>
+            <ul class="jsul"><span  style="font-weight: 550;">У JavaScript існує кілька основних типів даних:</span>
+            <li>>Число «number»</li>
+            <li>Стрічка «string»</li>
+            <li>Логічний тип (булевий) – Boolean</li>
+            <li>Спеціальне значення «null»</li>
+            <li>Спеціальне значення «undefined»</li>
+            <li>Об'єкти</li>
+            </ul>
+            <p><span  style="font-weight: 550;">Число «number»</span></p>
+            <p>var n = 123;</p>
+            <p>n = 12.345;</p>
+            <p></p>
+            <p></p>
+            <p>Єдиний тип число використовується як для цілих, так і для дробових чисел.</p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p>Існують спеціальні числові значення Infinity (нескінченність) і NaN (помилка обчислень).</p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p>Наприклад:</p>
+            <p>нескінченність Infinity виходить при діленні на нуль:</p>
+            <div class="ex" style="line-height:5px;" >
+                <p>alert (1/0); // Infinity</p></div>
+            <p>Помилка обчислень NaN буде результатом некоректної математичної операції, наприклад:</p>
+            <div class="ex" style="line-height:5px;" >
+            <p>alert ("не число" * 2); // NaN, помилка</p>
+            </div>
+            <p>Ці значення формально належать типу «число», хоча, звичайно, числами в їх звичайному розумінні не є.</p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p></p>
+            <p><span  style="font-weight: 550;">Рядок «string»</span></p>
+            <div class="ex" style="line-height:5px;" >
+            <p>var str = "Мама мила раму";</p>
+            <p>str = 'Одинарні лапки теж підійдуть';</p>
+            </div>
+            <p></p>
+            <p>У JavaScript одинарні та подвійні лапки рівноправні. Можна використовувати або ті або інші.</p>
+            <p></p>
+            <p>Тип символ не існує, є лише рядок.</p>
+            <p>У деяких мовах програмування є спеціальний тип даних для одного символу. Наприклад, у мові С це char. У JavaScript є тільки тип «рядок» string. Що, треба сказати, цілком зручно.</p>
+            <p></p>
+            <p> </p>
+            <p><span  style="font-weight: 550;">Булевий (логічний) тип «boolean»</span></p>
+            <p></p>
+            <p></p>
+            <p>У нього всього два значення: true (істина) і false (неправда).</p>
+            <p></p>
+            <p>Як правило, такий тип використовується для зберігання значення типу так / ні, наприклад:</p>
+            <div class="ex" style="line-height:5px;" >
+            <p>var checked = true; // Поле форми позначено галочкою</p>
+            <p>checked = false; // Поле форми не містить галочки</p>
+            </div>
+            <p></p>
+            <p><span  style="font-weight: 550;">Спеціальне значення «null»</span></p>
+            <p></p>
+            <p>Значення null не відноситься ні до одного з типів вище, а утворює свій окремий тип, що складається з єдиного значення null:</p>
+            <div class="ex" style="line-height:5px;" >
+                <p>var age = null;</p>
+            </div>
+            <p>У JavaScript null не є «посиланням на неіснуючий об'єкт» або «нульовим покажчиком», як в деяких інших мовах. Це просто спеціальне значення, яке має сенс «нічого» (порожня множина) або «значення невідоме».</p>
+            <p></p>
+            <p>Зокрема, код вище говорить про те, що вік age невідомий.</p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p><span  style="font-weight: 550;">Спеціальне значення «undefined»</span></p>
+            <p></p>
+            <p>Значення undefined, як і null, утворює свій власний тип, що складається з одного цього значення. Воно має сенс «значення не привласнили».</p>
+            <p></p>
+            <p>Якщо змінна оголошена, але в неї нічого не записано, то її значення як раз і є undefined:</p>
+            <div class="ex" style="line-height:5px;" >
+                <p>var x;</p>
+            <p>alert (x); // Виведе "undefined"</p>
+            </div>
+            <p>Можна привласнити undefined і в явному вигляді, хоча це робиться рідко:</p>
+            <div class="ex" style="line-height:5px;" >
+                <p>var x = 123;</p>
+            <p>x = undefined;</p>
+            <p></p>
+            <p>alert (x); // "undefined"</p>
+            </div>
+            <p>У явному вигляді undefined зазвичай не присвоюють, оскільки це суперечить його глузду. Для запису в змінну «порожнього» або «невідомого» значення використовується null.</p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p><span  style="font-weight: 550;">Об'єкти «object»</span></p>
+            <p></p>
+            <p>Перші 5 типів називають "примітивними".</p>
+            <p></p>
+            <p>Ще є шостий тип: «об'єкти».</p>
+            <p></p>
+            <p>Він використовується для колекцій даних і для оголошення більш складних сутностей.</p>
+            <p></p>
+            <p>Оголошуються об'єкти за допомогою фігурних дужок {...}, наприклад:</p>
+            <div class="ex" style="line-height:5px;" >
+            <p>var user          =            { name:             "ім'я" };</p>
+            <p></p>
+            <p>назва об’єкта              властивість      значення</p>
+            </div>
+            <p> </p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p><span  style="font-weight: 550;">Оператор typeof</span></p>
+            <p></p>
+            <p>Оператор typeof повертає тип аргументу.</p>
+            <p></p>
+            <p>У нього є два синтаксиси, з дужками і без:</p>
+            <p>Синтаксис оператора: typeof x.</p>
+            <p>Синтаксис функції: typeof (x).</p>
+            <p>Працюють вони однаково, але перший синтаксис коротше.</p>
+            <p></p>
+            <p>Результатом typeof є рядок, що містить тип:</p>
+            <div class="ex" style="line-height:5px;" >
+            <p>typeof undefined // "undefined"</p>
+            <p></p>
+            <p>typeof 0 // "number"</p>
+            <p></p>
+            <p>typeof true // "boolean"</p>
+            <p></p>
+            <p>typeof "foo" // "string"</p>
+            <p></p>
+            <p>typeof {} // "object"</p>
+            <p></p>
+            <p> </p>
+            <p></p>
+            <p>typeof null // "object" (1)</p>
+            <p></p>
+            <p>typeof function () {} // "function" (2)</p>
+            </div>
+            <p></p>
+            <p>В останніх двох рядках typeof поводиться по-особливому.</p>
+            <p></p>
+            <p>Результат typeof null == "object" - це офіційно визнана помилка в мові, яка зберігається для сумісності. Насправді null - це не об'єкт, а окремий тип даних.</p>
+            <p>Функції ми пройдемо трохи пізніше. Поки що лише зауважимо, що функції не є окремим базовим типом в JavaScript, а підвидом об'єктів. Але typeof виділяє функції окремо, повертаючи для них "function". На практиці це дуже зручно, оскільки дозволяє легко визначити функцію.</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul class="list2b">
+          
+        <li><a href="indexjs.html">Про JavaScript</a></li>
+        <li><a href="indexjs2.html">Змінні</a></li>
+        <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Типи даних</a></li>
+        <li><a href="indexjs4.html">Масиви</a></li>
+        <li><a href="indexjs5.html">Арифметика. Присвоєння</a></li>
+        <li><a href="indexjs6.html">Взаємодія з користувачем</a></li>
+        <li><a href="indexjs7.html">Умови</a></li>
+        <li><a href="indexjs8.html">Цикли</a></li>
+        <li><a href="indexjs9.html">Функції. Область видимості</a></li>
+        <li><a href="indexjs10.html">DOM</a></li>
+        <li><a href="indexjs11.html">Події</a></li>
+        <li><a href="indexjs12.html">jQuery</a></li>
+
+        </ul>
+    </div>
+</main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexjs.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexjs.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+        <a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>

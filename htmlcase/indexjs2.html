@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JavaScript-це ♥ HTMLcase</title>
+</head>
+<body>
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo2.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username" required><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px;" class='submit'>
+                  </form>
+                <p class='warn'><span>Щоб перейти потрібно увійти.</span></p>
+            </div>
+            <div class="modal-footer" style="color: #262626;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="registration.html" style="text-decoration: none; font-weight: 700;color: #721aba;">Зареєструйтеся</a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827">
+                            <a href="indexhtml.html" aria-current="page">HTML</a></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                            <li><span style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-family: 'Arimo', sans-serif;
+                            font-weight: bold;
+                            transition:.3s linear;
+                            cursor: pointer;">
+                                JS<span></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    <div class="container">
+        <div class="jstitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Змінні</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Базові поняття. Що таке "змінна"? "var message"?</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+
+<p>Кожна стрічка коду в Javascript – це інструкція для браузера</p>
+<p>";" - означає, що інструкція завершена і далі починається нова</p>
+<p></p>
+<p>Всі ідентифікатори регістрозалежні</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Залежно від того, для чого ви робите скрипт, знадобиться працювати з інформацією.</p>
+<p></p>
+<p>Якщо це електронний магазин - то це товари, кошик. Якщо чат - відвідувачі, повідомлення і так далі.</p>
+<p></p>
+<p>Щоб зберігати інформацію, використовуються змінні.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Змінна складається з імені та виділеної області пам'яті, яка їй відповідає.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Для оголошення або, іншими словами, створення змінної використовується ключове слово var:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var message;</p>
+</div>
+<p></p>
+<p>Після оголошення, можна записати в змінну дані:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var message;</p>
+<p>message = 'Hello'; // Збережемо у змінній рядок</p>
+</div>
+<p></p>
+<p>Ці дані будуть збережені у відповідній області пам'яті і надалі доступні при зверненні до імені:</p>
+<div class="ex" style="line-height:5px;" >
+<p> var message;</p>
+<p>message = 'Hello!';</p>
+<p></p>
+<p>alert (message); // Виведе вміст змінної</p>
+</div>
+<p></p>
+<p>Для стислості можна поєднати оголошення змінної і запис даних:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var message = 'Hello!';</p>
+</div>
+<p>Можна навіть оголосити кілька змінних відразу:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var user = 'John', age = 25, message = 'Hello';</p>
+</div>
+<p></p>
+<p>При зміні значення старе вміст змінної видаляється.</p>
+<div class="ex" style="line-height:5px;" >
+<p>var message; message = 'Hello!'; message = 'World!'; // заменили значение alert( message );</p>
+</div>
+<p> </p>
+<p></p>
+<p>Можна оголосити дві змінні і копіювати дані з однієї в іншу:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var hello = 'Hello world!';</p>
+<p></p>
+<p>var message;</p>
+<p></p>
+<p>message = hello;</p>
+<p></p>
+<p>alert( hello ); // Hello world!</p>
+<p>alert( message ); // Hello world!</p>
+</div>
+<p> </p>
+<ul class="jsul"><span>Для імен змінних існує 3 обмеження:</span>
+<li>Ім’я може складатись з: букв, цифр, символів $ та  _</li>
+<li>Назви змінних не можуть починатись з цифри</li>
+<li>Не можна використовувати в якості назви змінної зарезервовані слова</li>
+</ul>
+<ul class="jsul"><span>Правила вибору назви змінної</span>
+<li>Ніякого трансліту, тільки англійська</li>
+<li>Короткі імена можна давати тільки змінним, які не несуть смислового навантаження, наприклад індексам</li>
+<li>Змінні, що складаються з кількох слів, пишуться в camelCase (Регістр букв має значення.)</li>
+<li>Ім’я змінної має чітко відповідати її змісту</li>
+</ul>
+
+
+<p><span  style="font-weight: 550; padding-top:50px;">Константи</span></p>
+<p></p>
+<p>Константа - це змінна, яка ніколи не змінюється. Як правило, їх називають великими літерами, через підкреслення.</p>
+<p> </p>
+<p></p>
+<p>Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var COLOR_ORANGE = "# FF7F00";</p>
+<p>var color = COLOR_ORANGE;</p>
+<p>alert (color); // # FF7F00</p>
+</div>
+<p></p>
+<p>Технічно, константа є звичайною змінною, тобто її можна змінити. Але ми домовляємося цього не робити.</p>
+<p></p>
+<p>Навіщо потрібні константи? Чому б просто не писати var color = "#FF7F00"?</p>
+<p></p>
+<p>По-перше, константа COLOR_ORANGE - це зрозуміле ім'я. З присвоєння var color = "# FF7F00" незрозуміло, що колір - помаранчевий. Іншими словами, константа COLOR_ORANGE є «зрозумілим псевдонімом» для значення #FF7F00.</p>
+<p>По-друге, опечатка в рядку, особливо в такому складному як #FF7F00, може бути не зауважена, а в імені константи її допустити куди складніше.</p>
+<p>Константи використовують замість рядків і цифр, щоб зробити програму зрозумілішою і уникнути помилок.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550; padding-top:50px;">Отже,</span></p>
+<p></p>
+<p>У JavaScript можна оголошувати змінні для зберігання даних. Це робиться за допомогою var.</p>
+<p>Технічно, можна просто записати значення і без оголошення змінної, проте з ряду причин це не рекомендується.</p>
+<p>Разом з оголошенням можна відразу присвоїти значення: var x = 10.</p>
+<p>Змінні, названі ВЕНЛИКИМИ_БУКВАМИ, є константами, тобто ніколи не міняються. Як правило, вони використовуються для зручності, щоб було менше помилок.</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul class="list2b">
+          
+        <li><a href="indexjs.html">Про JavaScript</a></li>
+        <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Змінні</a></li>
+        <li><a href="indexjs3.html">Типи даних</a></li>
+        <li><a href="indexjs4.html">Масиви</a></li>
+        <li><a href="indexjs5.html">Арифметика. Присвоєння</a></li>
+        <li><a href="indexjs6.html">Взаємодія з користувачем</a></li>
+        <li><a href="indexjs7.html">Умови</a></li>
+        <li><a href="indexjs8.html">Цикли</a></li>
+        <li><a href="indexjs9.html">Функції. Область видимості</a></li>
+        <li><a href="indexjs10.html">DOM</a></li>
+        <li><a href="indexjs11.html">Події</a></li>
+        <li><a href="indexjs12.html">jQuery</a></li>
+
+        </ul>
+    </div>
+</main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexjs.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexjs.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+        <a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>

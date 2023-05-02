@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HTML-це ♥ HTMLcase</title>
+</head>
+<body>
+<header>
+    
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li><span  id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827" style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        font-family: 'Arimo', sans-serif;
+                        font-weight: bold;
+                        transition:.3s linear;
+                        cursor: pointer;">
+                            HTML</span></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                        <li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975">
+                            <a href="indexjs.html">JS</a></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    
+
+    <div class="container">
+        <div class="htmltitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Форми</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Що таке форма? Як зробити просту форму? </p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+           
+<p> <span  style="font-weight: 550;">Найпростіша форма</p></span>
+<div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title>Форма для входу на сайт&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h1>Форма входу&lt;/h1&gt;</p>
+<p>&lt;form action="http://man.adr.com.ua/html/form" method="post"&gt;</p>
+<p>&lt;label for="login-field">Ваш логін&lt;/label&gt;</p>
+<p>&lt;input type="text" name="login" id="login-field"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;</p>
+<p>
+<p>&lt;label for="password-field">Ваш пароль&lt;/label&gt;</p>
+<p>&lt;input type="password" name="password" id="password-field"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;</p>
+<p>            
+<p>&lt;input type="submit" value="Ввійти"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p></div>
+<p>          
+<p>
+<p> <span  style="font-weight: 550;">1.Створюємо форму. Тег &lt;form&gt;</p></span>
+<p>Форми потрібні для того, щоб відправляти дані з веб-сторінки на веб-сервер, який зможе ці дані обробити: зареєструвати користувача, створити повідомлення на форумі, відправити листа і так далі. Загалом, форми в вебі просто необхідні.</p>
+
+<p>Щоб створити форму, потрібно використовувати парний тег &lt;form&gt;, усередині якого розміщуються поля форми.</p>
+ 
+ <ul class="jsul"><span  style="font-weight: 550;">У тега &lt;form&gt; є два важливі атрибути:</span>
+<p><li>"action" - задає адресу, URL, відправка форми;</li></p>
+
+<p><li>"method" - задає метод надсилання форми.</li></p>
+</ul>
+<p>Приклад:
+    <div class="ex" style="line-height:5px;" >
+<p>&lt;form action = "http://http://man.adr.com.ua/form" method = "get"&gt;</p>
+   
+<p>поля форми</p>
+<p>&lt;/form&gt;</p>
+ </div>
+ <p> <span  style="font-weight: 550;">Методи</p></span>
+<p>Для відправки форми зазвичай використовують методи "get" або "post". Якщо не вказати атрибут "method", то буде використаний "get".</p>
+<p>
+<p>Метод "get" посилає дані форми в рядку запиту, тобто вони видні в адресному рядку браузера і слідують після знака питання. </p>
+<p>Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+<p>https://www.google.com/search?q=man</p>
+</div>
+<p>Метод "get" краще використовувати в пошукових формах, тому що він дозволяє отримати посилання на результати пошуку і передати її комусь.</p>
+<p>
+<p>Метод "post" посилає дані в тілі HTTP-запиту і використовується, коли потрібно відправити багато даних і посилання на результат обробки цих даних не потрібні. Наприклад, при редагуванні особистого профілю.</p>
+<p>
+<p> 
+<p>
+<p> 
+<p>
+<p> <span  style="font-weight: 550;">2.Текстове поле введення &lt;input&gt;</span>
+<p>
+<p>Більшість полів форм створюється за допомогою одиночного тега &lt;input&gt;. </p>
+<ul class="jsul"><span  style="font-weight: 550;">У цього тега два обов'язкові атрибути:</span>
+<li>"type" - задає тип поля;</li>
+
+<li>"name" - задає ім'я поля.</li>
+</ul>
+
+<p>
+<p>Тип поля впливає на те, як воно буде відображатися і поводитися. Найпоширеніший тип - це "text", який позначає текстове поле. Він же використовується за замовчуванням. </p>
+<p>Приклад:</p>
+<div class="ex" style="line-height:5px;" >
+<p>&lt;form action = "http://http://man.adr.com.ua/form" method = "get"&gt;</p>
+<p>&lt;input type="text" name="login"&gt;
+<p>&lt;/form&gt;
+</div>
+<p>Ім'я поля потрібно, щоб правильно обробити дані на сервері. Зазвичай, ім'я поля має бути унікальним в межах форми, хоча є винятки. Для завдання імені поля використовують латинські букви і цифри.</p>
+<p>
+<p> 
+<p>
+<p> <span  style="font-weight: 550;">3.Ідентифікатор "id" і значення за замовчуванням</span>
+<p></p>
+<p>Атрибут "id" поля введення позначає ідентифікатор. Він повинен бути унікальним не тільки в межах форми, а й на всій сторінці.</p>
+<p>
+<p>Зазвичай ідентифікатори використовують для підвищення зручності роботи з формою, наприклад, створюють підписи, пов'язані з дрібними полями. При клацанні по таких підписах активується зв'язане поле. І це зручно, так як по великому підпису потрапити легше, ніж по маленькому полю. Також ідентифікатори використовують в JavaScript для роботи з полями.</p>
+<p>
+<p>Ідентифікатор на відміну від імені поля не передається на сервер. Краще використовувати ідентифікатори, що відрізняються від імені поля, особливо актуально це для полів множинного вибору, які ми розберемо далі.</p>
+<p>
+<p>Атрибут "value" задає значення поля вводу за замовчуванням. Це теж підвищує зручність.</p>
+<p>
+<p>Погодьтеся, приємно зайти у величезну анкету на яких-небудь держпослуг, а там ваші паспортні дані вже підставлені в потрібні поля і заповнювати їх не треба. І все завдяки тому, що програміст додав до полів атрибут value з потрібними даними.</p>
+<p>
+<p> 
+    <div class="ex" style="line-height:5px;" >
+<p>&lt;input type="password" name="password" id="password-field"&gt;</p>
+<p>Кількість &lt;input type="text" name="kilkist" id="kilkist-field" value="507"&gt; шт.</p>
+</div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">4.Підпис для поля вводу</span>
+<p>
+<p>Можна подумати, що зробити підпис до поля дуже просто.</p> 
+<p> Пишемо текст поряд з полем і все готово:</p>
+<p> <div class="ex" style="line-height:5px;" >
+<p>Підпис &lt;input type = "text" name = "username"&gt;
+</div>
+<p>Насправді цього недостатньо - ми отримали просто шматок тексту і поле, які розташовані поруч один з одним, але логічно ніяк не пов'язані.</p>
+<p>
+<p>Є спеціальний тег, який дозволяє сміливо сказати: «Цей шматок тексту дійсно підпис до цього поля!». Це парний тег &lt;label&gt;.</p>
+<p>
+<p>Він пов'язує текст і поле введення логічно. </p>
+<p>
+<p>Створювати підписи до полів за допомогою &lt;label&gt; - хороший прийом. Використовуйте його.</p>
+<p>
+<p>Перший спосіб створити підпис - просто обернути текст підпису та тег поля в тег &lt;label&gt;, ось так:</p>
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;label&gt;
+<p>Підпис &lt;input type = "text" name = "username"&gt;</p>
+<p>&lt;/label&gt;</p>
+</div>
+<p>Треба відзначити, що при обертанні тексту в тег &lt;label&gt; він візуально ніяк не змінюється, адже головне завдання підпису - створити логічний зв'язок.</p>
+<p>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">5. Пов'язуємо підпис і поле по "id"</span>
+<p>
+<p>Іноді обернути поле і текст підпису в тег &lt;label&gt; не можна. Наприклад, коли вони розміщені в різних комірках таблиці.</p>
+<p>
+<p>У цьому випадку можна зв'язати підпис з полем за допомогою атрибуту "id". Алгоритм такий:</p>
+<p>
+<p>Додаємо до поля введення ідентифікатор за допомогою атрибуту "id".</p>
+<p>
+<p>Обертаємо текст підпису в тег &lt;label&gt;.
+<p>
+<p>Додаємо тегу &lt;label&gt; атрибут "for".</p>
+<p>
+<p>У атрибут "for" записуємо таке ж значення, що і в атрибуті "id" у поля.</p>
+<p>
+<p>наприклад:
+<p> <div class="ex" style="line-height:5px;" >
+<p>&lt;label for="login-field"&gt;Ваш логін&lt;/label&gt;</p>
+<p>&lt;input type="text" name="login" id="login-field"&gt;</p>
+<p></div>
+<p> </p>
+<p>
+<p><span  style="font-weight: 550;">6. Поле для введення пароля</span>
+<p>
+<p>Ми створюємо просту форму входу. Вже знаємо, як створити два поля і пов'язані з ними підписи. Одне з полів призначено для введення пароля, але зараз воно є простим текстовим полем.</p>
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;label for="login-field"&gt;Ваш логін&lt;/label&gt;
+<p>&lt;input type="text" name="login" id="login-field"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;</p>
+<p>&lt;label for="password-field"&gt;Ваш пароль&lt;/label&gt;</p>
+<p>&lt;input type="text" name="password" id="password-field"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;</p>
+<p></div>
+<p>Щоб зробити його справжнім полем для введення пароля, в якому текст буде відображатися «зірочками», потрібно просто змінити значення атрибута "type" на "password".</p>
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;label for="login-field"&gt;Ваш логін&lt;/label&gt;
+<p>&lt;input type="text" name="login" id="login-field"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;</p>
+<p>&lt;label for="password-field"&gt;Ваш пароль&lt;/label&gt;</p>
+<p>&lt;input type="password" name="password" id="password-field"&gt;</p>
+<p>&lt;br&gt;&lt;br&gt;
+<p></div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">7. Кнопка відправки форми</p></span>
+<p></p>
+<p>Форма практично готова. Залишилося додати кнопку для відправки форми. Така кнопка створюється за допомогою тега &lt;input&gt; c типом "submit".</p>
+<p>
+<p>Напис на кнопці можна задати за допомогою атрибуту "value". Для кнопки відправки форми задавати ім'я необов'язково. Але якщо ім'я задано, то на сервер будуть відправлятися ім'я і значення кнопки.</p>
+<p>
+<p>Зазвичай ім'я для кнопки відправки задають, коли у формі кілька кнопок, що відповідають за різні дії. Браузер відправляє на сервер ім'я і значення тільки тієї з них, на яку натиснув користувач. Таким чином, сервер може зрозуміти, яку кнопку натиснули і що потрібно зробити.</p>
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;input type="submit" value="Ввійти"&gt;
+<p></div>
+<p>Наша перша форма готова.</p>
+<p>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">8.Багаторядкові поля введення &lt;textarea&gt;</p></span>
+<p></p>
+<p>Ми навчилися створювати найпростіші форми з текстовими полями і кнопками. А тепер познайомимося з більш складними елементами форми.</p>
+<p>
+<p>Багаторядкове текстове поле створюється за допомогою парного тега &lt;textarea&gt;. У нього є атрибути "name" і "id", які аналогічні атрибутам текстового поля.</p>
+<p>
+<p>Атрибут "rows" приймає цілочисельне значення і задає висоту багаторядкового поля в рядках. Атрибут cols задає ширину поля в символах. В якості ширини символу береться деяка «середня ширина».</p>
+<p>
+<p>Атрибут "value" у багаторядкового поля відсутній, а значення за замовчуванням задається по-іншому. Текст, розташований між відкритим і закритим тегом &lt;textarea&gt; і є значенням за замовчуванням. Ось так:</p>
+<p>
+<p>&lt;textarea&gt; Значення за замовчуванням &lt;/textarea&gt;</p>
+<p></p>
+<p> 
+<p>
+<p>Приклад (форма2):
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Багаторядкове поле вводу&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;
+<p>&lt;h1&gt;Коментарі&lt;/h1&gt;</p>
+<p>
+<p>&lt;form action="http://man.adr.com.ua/html/form" method="post"&gt;</p>
+<p>&lt;p&gt;Список коментарів&lt;/p&gt;
+<p>&lt;p&gt;Введіть ваш коментар:&lt;/p&gt;</p>
+<p>
+<p>&lt;textarea name="comment" id="comment-field" rows="10"&gt;Текст коментаря&lt;/textarea&gt;</p>
+<p>
+<p>&lt;p&gt;&lt;input type="submit" value="Відправити"&gt;&lt;/p&gt;</p>
+<p>&lt;/form&gt;
+<p>&lt;/body&gt;
+<p>&lt;/html&gt;
+<p></div>
+<p> 
+<p><span  style="font-weight: 550;">9.Чекбокс або «галочка»</p></span>
+<p>
+<p>Поле-галочка - це тег &lt;input&gt; з типом "checkbox".</p>
+<p>
+<p>Галочка працює за принципом «або так, або ні». Якщо галочка стоїть, то браузер посилає змінну з ім'ям поля на сервер, якщо галочки немає, то не надсилається нічого. Таким чином, атрибут "value" не є обов'язковим.</p>
+<p>
+<p>Щоб галочка стояла за замовчуванням, потрібно додати до тегу атрибут "checked". Ось так:</p>
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;input type = "checkbox" checked&gt;
+</div>
+<p>Якщо в одній формі є кілька чекбоксів, то імена у них повинні бути різними.</p>
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;p&gt;Запитання:&lt;/p&gt;
+<p>
+<p>&lt;input name="subscribe" type="checkbox" id="subscribe-field" checked&gt;</p>
+<p>&lt;label for="subscribe-field"&gt;Підписати вас на россилку?&lt;/label&gt;</p>
+<p></div>
+<p> 
+<p>
+<p>Приклад (форма3):
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Форма реєстрації&lt;/title&gt;</p>
+<p>&lt;/head&gt;
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;Реєстрація&lt;/h1&gt;</p>
+<p>
+<p>&lt;form action="http://man.adr.com.ua/html/form" method="post"&gt;</p>
+<p>&lt;label for="login-field"&gt;Ваш логін (email):&lt;/label&gt;&lt;br&gt;</p>
+<p>&lt;input type="text" name="login" id="login-field"&gt;
+<p>&lt;br&gt;</p>
+<p>&lt;label for="password-field"&gt;Пароль:&lt;/label&gt;&lt;br&gt;</p>
+<p>&lt;input type="password" name="password" id="password-field"&gt;</p>
+<p>&lt;br&gt;
+<p>&lt;label for="comment-field"&gt;Інформація про себе:&lt;/label&gt;&lt;br&gt;</p>
+<p>&lt;textarea name="comment" id="comment-field" rows="3"&gt;&lt;/textarea&gt;</p>
+<p>&lt;br&gt;
+<p>&lt;input name="subscribe" type="checkbox" id="subscribe-field" checked&gt;</p>
+<p>&lt;label for="subscribe-field"&gt;Підписатись на розсилку&lt;/label&gt;&lt;br&gt;</p>
+<p>
+<p>&lt;input type="submit" value="Зареєструватись"&gt;
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;
+<p>&lt;/html&gt;
+<p></div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">10. Перемикач або «радіобаттон»</p></span>
+<p></p>
+<p>Поле-перемикач - це тег &lt;input&gt; з типом "radio".</p>
+<p>
+<p>Зазвичай перемикачі розміщують групами по кілька штук. Причому у перемикачів з однієї групи має бути однакове ім'я і різні значення, які задаються c допомогою "value".</p>
+<p>
+<p>Таким чином, атрибут "value" є для перемикачів обов'язковим. Браузер відправляє на сервер значення "value" вибраного перемикача.</p>
+<p>
+<p>У цьому завданні ми почнемо створювати перемикач.
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;h1&gt;Тест&lt;/h1&gt;</p>
+<p>
+<p>&lt;form action=index.html method="get"&gt;</p>
+<p>&lt;p&gt;&lt;i&gt;Який тег позначає «абзац»?&lt;/i&gt;&lt;/p&gt;</p>
+<p>&lt;label&gt;
+<p>&lt;input type="radio" name="question-one" value="p"&gt;</p>
+<p>Тег &lt;p&gt;</p>
+<p>&lt;/label&gt;
+<p></div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">11. Група перемикачів</p></span>
+<p>
+<p>Тепер додамо ще один варіант відповіді в наш перемикач. Для цього потрібно додати ще один &lt;input&gt; з таким же ім'ям, але іншим значенням "value".</p>
+<p>
+<p>Подібним чином можна створювати групи перемикачів з будь-якою кількістю варіантів.</p>
+<p>
+<p>Щоб зробити який-небудь варіант в перемикачі обраним за замовчуванням, потрібно додати до відповідного тегу &lt;input&gt; атрибут "checked", як у поля-галочки.</p>
+<p>
+<p>До речі, ім'я поля у перемикачів однієї групи має бути однаковим, але ідентифікатори завжди повинні бути унікальними.</p>
+<p>
+<p> 
+<p>
+<p>Приклад (форма 4):
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Группа перемикачів&lt;/title&gt;</p>
+<p>&lt;/head&gt;
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;Тест&lt;/h1&gt;
+<p>
+<p>&lt;form action="index.html" method="get"&gt;</p>
+<p>&lt;p&gt;В тестах часто потрібно вибрати один з варіантів&lt;/p&gt;</p>
+<p>
+<p>&lt;p&gt;&lt;i&gt;Який тег позначає «абзац»?&lt;/i&gt;&lt;/p&gt;</p>
+<p>&lt;label&gt;
+<p>&lt;input type="radio" name="question-one" value="p"&gt;</p>
+<p>Тег &lt;p&gt;</p>
+<p>&lt;/label&gt;
+<p>&lt;br&gt;
+<p>&lt;label&gt;
+<p>&lt;input type="radio" name="question-one" value="b" checked&gt;</p>
+<p>Тег &lt;b&gt;
+<p>&lt;/label&gt;
+<p>
+<p>&lt;input type="submit" value="Відправити"&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;
+<p>&lt;/html&gt;
+<p></div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">12. Список, що розкривається або «селект»</p></span>
+<p>Список, що розкривається також, як і перемикач, дозволяє вибрати один варіант відповіді з декількох.</p>
+<p>Список, що розкривається створюється за допомогою парного тега &lt;select&gt;, у якого є знайомі атрибути "name" і "id".</p>
+<p>Варіанти відповідей задаються за допомогою парних тегів &lt;option&gt;, які повинні розташовуватися всередині тега &lt;select&gt;. </p>
+<p>Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+<p>&lt;select name = "країни"&gt;
+<p>&lt;option value = "Україна"&gt;Україна &lt;/option&gt;</p>
+<p>
+<p>&lt;option value = "США"&gt;США&lt;/option&gt;</p>
+<p>
+<p>...
+<p>&lt;/select&gt;</p>
+</div>
+<p>В атрибуті "value" тега &lt;option&gt; задається значення варіанта відповіді, а всередині цього тега розташовується підпис варіанту відповіді.</p>
+<p>Якщо при відправленні форми у обраного варіанту заданий "value", то на сервер відправиться значення цього атрибута. В іншому випадку буде відправлений текст підпису.</p>
+<p>
+<p> 
+<p>
+<p>Приклад (форма 5):
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Список «селект»&lt;/title&gt;</p>
+<p>&lt;/head&gt;
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;Анкета&lt;/h1&gt;
+<p></p>
+<p>&lt;form action="index.html" method="get"&gt;</p>
+<p>&lt;p&gt;вибираємо дату&lt;/p&gt;</p>
+<p>
+<p>&lt;p&gt;&lt;i&gt;Ваш рік народження&lt;/i&gt;&lt;/p&gt;</p>
+<p>&lt;select name="year"&gt;</p>
+<p>&lt;option value="2000"&gt;2000 рік&lt;/option&gt;</p>
+<p>&lt;option value="2001"&gt;2001 рік&lt;/option&gt;</p>
+<p>...
+<p>&lt;/select&gt;</p>
+<p>&lt;input type="submit" value="Відправити"&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;
+<p>&lt;/html&gt;
+<p></div>
+<p> 
+<p> 
+<p> </p>
+<p>
+<p><span  style="font-weight: 550;">13. «Мультіселект»</p></span>
+<p>
+<p>Список, що розкривається можна перетворити на так званий «мультіселект», тобто список, в якому можна вибрати не один, а кілька варіантів.</p>
+<p>
+<p>Щоб зробити це, потрібно додати до тегу &lt;select&gt; атрибут "multiple".</p>
+<p>
+<p>Вибрати декілька варіантів можна, клацаючи по них з натисненою клавішею "Ctrl" на "Windows".</p>
+<p>
+<p>Висоту мультіселекта можна змінювати за допомогою атрибуту "size" тега &lt;select&gt;.</p>
+<p>
+<p>Щоб відзначити як вибрані за замовчуванням одне або кілька значень, потрібно до відповідних тегів &lt;option&gt; додати атрибут "selected".</p>
+<p>
+<p> 
+<p>
+<p>Приклад (форма 6):
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;«Мультиселект»&lt;/title&gt;</p>
+<p>&lt;/head&gt;
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;Анкета&lt;/h1&gt;
+<p></p>
+<p>&lt;form action="index.html" method="get"&gt;</p>
+<p>&lt;p&gt;&lt;i&gt;Улюблені дні тижня:&lt;/i&gt;&lt;/p&gt;</p>
+<p>&lt;select name="days" size="7" multiple&gt;</p>
+<p>&lt;option&gt;Понеділок&lt;/option&gt;</p>
+<p>&lt;option&gt;Вівторок&lt;/option&gt;</p>
+<p>&lt;option&gt;Середа&lt;/option&gt;</p>
+<p>&lt;option&gt;Четвер&lt;/option&gt;</p>
+<p>&lt;option&gt;П'ятниця&lt;/option&gt;</p>
+<p>&lt;option&gt;Субота&lt;/option&gt;</p>
+<p>&lt;option selected&gt;Неділя&lt;/option&gt;</p>
+<p>&lt;/select&gt;</p>
+<p>
+<p>&lt;input type="submit" value="Вибрати"&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;
+<p></div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">14. Поле для завантаження файлів</p></span>
+<p></p>
+<p>Поле для завантаження файлів - це тег &lt;input&gt; з типом "file". Для цього поля обов'язковим атрибутом є ім'я.</p>
+<p>
+<p>Щоб поле запрацювало і браузер зміг передати вибраний файл на сервер, необхідно додати формі атрибут "enctype" зі значенням "multipart / form-data". Не полю, а формі.</p>
+<p>
+<p> 
+<p>
+<p> 
+<p>
+<p>Приклад (форма 7):
+<p>
+<p> 
+<p><div class="ex" style="line-height:5px;" >
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Поле для завантаження файлів&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;
+<p>&lt;h1&gt;Профіль&lt;/h1&gt;
+<p></p>
+<p>&lt;form action="http://man.adr.com.ua/html/form" method="post" enctype="multipart/form-data"&gt;</p>
+<p>&lt;p&gt;Виберіть зображення для свого аватара:&lt;/p&gt;
+<p>&lt;input type="file" name="avatar"&gt;</p>
+<p>
+<p>&lt;input type="submit" value="Завантажити"&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;
+<p>&lt;/html&gt;
+<p></div>
+<p> 
+<p>
+<p><span  style="font-weight: 550;">15. Приховане поле</p></span>
+<p>
+<p>І ще одне невидиме і дуже корисне поле. Це приховане поле. Його використовують, коли у формі потрібно відправити якісь додаткові службові дані, які не вводяться користувачем.</p>
+<p>
+<p>Наприклад, це можуть бути реквізити замовлення або номер користувача у формі оплати.</p>
+<p>
+<p>Приховане поле - це тег &lt;input&gt; з типом "hidden".
+<p>
+<p></p>
+<div class="ex" style="line-height:5px;" >
+<p>&lt;label&gt;</p>
+<p>Сумма:
+<p>&lt;input type="text" name="amount" value="500"&gt;грн.</p>
+<p>&lt;/label&gt;&lt;br&gt;&lt;br&gt;</p>
+<p>&lt;label&gt;
+<p>&lt;input type="hidden" name="account_number" value="15"&gt;</p>
+<p>&lt;/label&gt;</p>
+<p>&lt;input type="submit" value="Заплатити"&gt;</p>
+</div>
+            </div></p>
+        </div>
+    </div>
+        <div class="sidebar">
+        <ul class="list2b">
+          
+          <li><a href="indexhtml.html"> HTML. Веб-сторінка. </a></li>
+          <li><a href="indexhtml2.html">Основні теги HTML5</a></li>
+          <li><a href="indexhtml3.html">Гіперпосилання. Зображення</a></li>
+          <li><a href="indexhtml4.html">Таблиці</a></li>
+          <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Форми</a></li>
+		  <li><a href="indexhtml6.html">Блочна модель</a></li>
+		  <li><a href="indexhtml7.html">Аудіо, відео</a></li>
+        </ul>
+        </div>
+    </main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexhtml4.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexhtml4.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+		<a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>

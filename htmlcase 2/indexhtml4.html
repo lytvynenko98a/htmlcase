@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HTML-це ♥ HTMLcase</title>
+</head>
+<body>
+<header>
+    
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li><span  id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827" style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        font-family: 'Arimo', sans-serif;
+                        font-weight: bold;
+                        transition:.3s linear;
+                        cursor: pointer;">
+                            HTML</span></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                        <li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975">
+                            <a href="indexjs.html">JS</a></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    
+
+    <div class="container">
+        <div class="htmltitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Таблиці</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Як зробити просту таблицю? Чи можна так само редагувати таблицю, як і в Word-i?</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+
+            <p><span  style="font-weight: 550;">Найпростійша таблиця</span></p>
+            <div class="ex" style="line-height:5px;" >
+                <p>&lt;table border="1"&gt;</p>
+                <p>&lt;tr&gt;</p>
+                <p><blockquote>&lt;td&gt;Браузер&lt;/td&gt;</blockquote></p>
+                <p><blockquote>&lt;td&gt;К-сть користувачів&lt;/td&gt;</blockquote></p>
+                <p>&lt;/tr&gt;</p>
+                <p>&lt;tr&gt;</p>
+                <p><blockquote>&lt;td&gt;Mozilla Firefox&lt;/td&gt;</blockquote></p>
+                <p><blockquote>&lt;td&gt;63&lt;/td&gt;</blockquote></p>
+                <p>&lt;/tr&gt;</p>
+                <p> &lt;tr&gt;</p>
+                <p><blockquote>&lt;td&gt;Google Chrome&lt;/td&gt;</blockquote></p>
+                <p><blockquote>&lt;td&gt;78&lt;/td&gt;</blockquote></p>
+                <p>&lt;/tr&gt;</p>
+                <p>&lt;tr&gt;</p>
+                <p><blockquote>&lt;td&gt;Safari&lt;/td&gt;</blockquote></p>
+                <p><blockquote>&lt;td&gt;35&lt;/td&gt;</blockquote></p>
+                <p>&lt;/tr&gt;</p>
+                <p>&lt;/table&gt;</p>
+ </div>
+        <p><span  style="font-weight: 550;">Додаємо рядки</span></p>
+<p>Найпростіша таблиця описується за допомогою трьох тегів:</p>
+
+<p>&lt;table&gt; позначає таблицю.</p>
+
+<p>&lt;tr&gt; розшифровується як «рядок таблиці», позначає рядок таблиці.</p>
+
+<p>&lt;td&gt; розшифровується як «Таблиця даних», позначає комірку всередині рядка таблиці.</p>
+
+<p>Теги &lt;td&gt; розташовуються усередині тегів &lt;tr&gt;, а ті, у свою чергу, всередині &lt;table&gt;. Майже весь текстовий вміст таблиці розміщується всередині тегів &lt;td&gt;.</p>
+
+<p>У простій таблиці в кожному рядку має бути однакова кількість комірок, тобто всередині всіх &lt;tr&gt; має бути однакова кількість &lt;td&gt;.</p>
+
+<p>Потренуйтеся додавати рядки в таблицю.</p>
+
+<p><span  style="font-weight: 550;">Додаємо стовпці</span></p>
+
+<p>З рядками впоралися, тепер потренуємося додавати в таблицю стовпці.</p>
+
+<p>Для того, щоб додати стовпець в таблицю, треба в кожен рядок &lt;tr&gt; додати по комірці &lt;td&gt;.</p>
+ 
+<p><span  style="font-weight: 550;">Відступи всередині осередків</span></p>
+
+<p>Вміст нашої таблиці у комірках прилипає до рамок. Якщо додати відступи всередині осередків, то інформація буде сприйматися набагато краще.</p>
+
+<p>Відступи всередині комірок можна додавати за допомогою атрибуту cellpadding тега &lt;table&gt;. Але краще його не використовувати, а задавати відступи за допомогою CSS.</p>
+
+<p>CSS-властивість padding задає «внутрішні відступи елементу» з усіх боків.</p>
+
+<p>Наприклад, щоб задати у комірок усі відступи в 10 пікселів, а відступ зліва в 20 пікселів, потрібно написати такий CSS-код:</p>
+<div class="ex" style="line-height:5px;" >
+<p>td {</p>
+<p>padding: 10px;</p>
+<p>padding-left: 20px;</p>
+<p>}</p>
+</div>
+
+<p><span style="font-weight: 550;">Комірки-заголовки</span></p>
+
+<p>Зазвичай в таблицях виділяють назви стовпців або рядків. У HTML для цього передбачений спеціальний тег &lt;th&gt;, який розшифровується як "table header" і позначає комірку-заголовок. Тег &lt;th&gt; аналогічний &lt;td&gt;, він так само повинен розташовуватися всередині &lt;tr&gt;, для нього стилями можна задавати все ті ж властивості.</p>
+
+<p>За замовчуванням текст всередині &lt;th&gt; виділяється жирним і вирівнюється по центру комірки.</p>
+<div class="ex" style="line-height:5px;" >
+<p>&lt;th&gt;Браузер&lt;/th&gt;</p>
+</div>
+ 
+<p><span style="font-weight: 550;">Заголовок таблиці</span></p>
+<p>Створимо підпис до таблиці (або заголовок таблиці).</p>
+<p>Тег &lt;caption&gt; повинен розміщуватися всередині тега &lt;table&gt;, причому безпосередньо усередині нього і першим, до решти вкладених тегів. Ось так:</p>
+<div class="ex" style="line-height:5px;" >
+<p>&lt;table&gt;</p>
+<p>&lt;caption&gt; Текст &lt;/ caption&gt;</p>
+<p>...</p>
+<p>&lt;/ table&gt;</p>
+</div>
+<p>Тег заголовка йде перший всередині таблиці, але за допомогою CSS можна перемістити заголовок таблиці в будь-яке місце: зверху чи знизу таблиці, по центру, праворуч або ліворуч.</p>
+
+<p><span style="font-weight: 550;">Об'єднати комірки в рядках</span></p>
+<p>Ми підібралися до одного з найскладніших питань по роботі з таблицями. Це об'єднання комірок.</p>
+<p>Коли ви поєднуєте комірки в текстовому редакторі, наприклад, Word, то програма багато робить за вас. У чистому HTML завдання об'єднання складніше, однак, не варто лякатися, сам принцип об'єднання комірок не такий складний, просто потрібно більше уважності.</p>
+<p>Почнемо з об'єднання комірок по горизонталі. Щоб об'єднати комірки по горизонталі, необхідно використовувати атрибут colspan у тегів &lt;th&gt; або &lt;td&gt;.</p>
+<p>Коли ви задаєте комірці атрибут colspan зі значенням 2, то комірка ні би «розтягується» на клітинку праворуч, але та комірка не зникає, а відсувається і в таблиці з'являється новий стовпець. Щоб видалити його, потрібно видалити комірку, яка знаходиться праворуч від «розтягнутої».</p>
+
+<p><span style="font-weight: 550;">Об'єднати комірки в стовпцях</span></p>
+<p>Об'єднання комірок по вертикалі трохи складніше. Воно здійснюється за допомогою атрибуту rowspan у тега &lt;td&gt; або &lt;th&gt;.</p>
+<p>Коли ви задаєте комірці атрибут rowspan зі значенням 2, то комірка ніби «розтягується» на наступний рядок. При цьому комірка, яка була під «розтягнутою» відсувається в своєму ж рядку вправо, що додає в таблицю зайвий стовпець. Видаливши комірку, яка була під «розтягнутою» ми позбудемося цього стовпця.</p>
+
+<p><span style="font-weight: 550;">Закріплення colspan</span></p>
+<p>Чи можна об'єднати більше двох комірок по горизонталі? Можна! При цьому точно так само використовується атрибут colspan. Однак, так як комірка «розтягується» вправо більше, ніж на одну сусідню клітинку, то і зайвих стовпців з'являється більше.</p>
+<p>Наприклад, якщо встановити colspan рівним 4, то комірка розтягнеться на три сусідні комірки праворуч, а вони в свою чергу змістяться, додавши в таблицю три стовпці.</p>
+ 
+<p><span style="font-weight: 550;">Закріплення rowspan</span></p>
+<p>Об'єднання кількох комірок по вертикалі теж можливо. Як ви пам'ятаєте, при вертикальному об'єднанні витісняються комірки, які знаходяться в рядках під «розтягнутою» коміркою. І ці осередки витісняються праворуч у своїх рядках.</p>
+
+<div class="ex" style="line-height:5px;" >
+<p>&lt;table&gt;</p>
+
+<p>&lt;tr&gt;</p>
+<p><blockquote>&lt;td rowspan="4"&gt;1.1&lt;/td&gt;</blockquote></p>
+<p><blockquote>&lt;td&gt;1.2&lt;/td&gt;</blockquote></p>
+<p><blockquote>&lt;td rowspan="3"&gt;1.3&lt;/td&gt;</blockquote></p>
+<p><blockquote>&lt;td&gt;1.4&lt;/td&gt;</blockquote></p>
+<p>&lt;/tr&gt;</p>
+
+
+<p>&lt;tr&gt;</p>
+<p><blockquote>&lt;td rowspan="2"&gt;2.2&lt;/td&gt;</blockquote></p>
+<p><blockquote>&lt;td&gt;2.4&lt;/td&gt;</blockquote></p>
+<p>&lt;/tr&gt;</p>
+<p>&lt;tr&gt;</p>
+<p><blockquote>&lt;td&gt;3.4&lt;/td&gt;</blockquote></p>
+<p>&lt;/tr&gt;</p>
+
+
+<p>&lt;tr&gt;</p>
+<p><blockquote>&lt;td&gt;4.2&lt;/td&gt;</blockquote></p>
+<p><blockquote>&lt;td&gt;4.3&lt;/td&gt;</blockquote></p>
+<p><blockquote>&lt;td&gt;4.4&lt;/td&gt;</blockquote></p>
+<p>&lt;/tr&gt;</p>
+
+
+<p>&lt;/table&gt;</p>
+</div>
+ 
+
+<p>Комбо: colspan + rowspan</p>
+<p>Можна розтягувати комірку одночасно і по вертикалі, і по горизонталі. Для цього потрібно задати два атрибути: rowspan і colspan.</p>
+<p>Витіснення сусідніх комірок відбуватиметься так само, як і при звичайному об'єднанні комірок. Правда, витіснених комірок виявиться більше. Наприклад, комірка з rowspan = "2" і colspan = "2" витіснить три сусідні.</p>
+<p>Цей випадок з тих, які легше пояснити на прикладі, ніж на словах.</p>
+<p><span style="font-weight: 550;">Вирівнювання вмісту в комірках</span></p>
+<p>Вміст комірок можна вирівнювати по горизонталі і по вертикалі за допомогою CSS.</p>
+<p>За вирівнювання по горизонталі відповідає CSS-властивість text-align. Найчастіше використовуються значення left, center і right.</p>
+<p>За вирівнювання по вертикалі відповідає CSS-властивість vertical-align. Найчастіше використовуються значення top, middle і bottom.</p>
+<p>Насправді, значень у обох властивостей більше, але у випадку з комірками нас цікавлять тільки перераховані.</p>
+<p>Щоб задати вирівнювання вмісту осередків, треба в стилях вказати:</p>
+<div class="ex" style="line-height:5px;" >
+<p>td {</p>
+<p>vertical-align: значення;</p>
+<p>text-align: значення;</p>
+<p>}</p>
+</div>
+<p>Ці стилі вплинуть на всі комірки. Щоб задати вирівнювання тільки в певних комірках, потрібно призначити їм класи і визначити стилі для класів.</p>
+<p><span style="font-weight: 550;">Додамо кольору</span></p>
+<p>Таблиці можна розфарбовувати, задаючи колір фону комірок, колір тексту в комірках, а також колір рамок.</p>
+<p>Кольорами можна керувати за допомогою цих властивостей:</p>
+<p>background-color - задає колір фону,</p>
+<p>color - колір тексту,</p>
+<p>border-color - колір рамок.</p>
+<p>До цього ми використовували компактну форму для опису рамок:</p>
+<div class="ex" style="line-height:5px;" >
+<p>border: 1px solid lightgray.</p>
+</div>
+<p>У цьому записі колір задає третя частина - lightgray.</p>
+<p></p>
+<p>Значення кольорів в CSS задаються різними способами. Ми будемо використовувати ключові слова для опису кольору.</p>
+<p></p>
+<p>Таким чином, щоб задати кольор для комірки в CSS, потрібен такий код:</p>
+<div class="ex" style="line-height:5px;" >
+<p>td {</p>
+<p>color: колір;</p>
+<p>background-color: колір;</p>
+<p>border: 1px solid колір;</p>
+<p>}</p>
+</div>
+<p>Звичайно, розфарбовувати можна і td, і th, і навіть table.</p>
+            </div>
+        </div>
+    </div>
+        <div class="sidebar">
+        <ul class="list2b">
+          
+          <li><a href="indexhtml.html"> HTML. Веб-сторінка. </a></li>
+          <li><a href="indexhtml2.html">Основні теги HTML5</a></li>
+          <li><a href="indexhtml3.html">Гіперпосилання. Зображення</a></li>
+          <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Таблиці</a></li>
+          <li><a href="indexhtml5.html">Форми</a></li>
+		  <li><a href="indexhtml6.html">Блочна модель</a></li>
+		  <li><a href="indexhtml7.html">Аудіо, відео</a></li>
+        </ul>
+        </div>
+    </main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexhtml4.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexhtml4.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+		<a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>

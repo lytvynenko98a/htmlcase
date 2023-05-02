@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Зареєструватись ♥ HTMLcase</title>
+</head>
+<body style="background-color: #2D2F34; ">
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog" style="background:#383B40; border: 1px solid rgb(112, 112, 112)">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username" style="border: 1px solid rgb(112, 112, 112);" required maxlength="12"><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password" style="border: 1px solid rgb(112, 112, 112);" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px; background:#383B40; color:#8d8d8d" class='submit'>
+                  </form>
+            </div>
+            <div class="modal-footer" style="color: #6b6b6b;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="" style="text-decoration: none; font-weight: 700; color:rgb(153, 28, 255);">Зареєструйтеся</a>
+            </div>
+        </div>
+        </div>
+    <div class="reg-dialog" style="background:#383B40;border: 1px solid rgb(112, 112, 112);">
+        <div class="reg-header" style="background:#383B40;">
+            <img src="htmlcaselogo.png" style="width:250px;">
+        </div>
+        <div class="reg-body" style="background:#383B40;">
+            <div>
+            <p style="margin-top: -20px; font-weight: 500; line-height: 20px; font-size: 17px; margin: 0 40px 10px; color: #999; ">Зареєструйтеся, щоб переглядати весь контент сайту</p>
+            </div>
+            <form style="margin:0 30px 6px;" class="login">
+                <input type="text" placeholder="Номер телефону, електронна пошта" name="login" class="username" style="border: 1px solid rgb(112, 112, 112);"required><br>
+                <input type="text" placeholder="Повне ім'я" name="firstname" class="username" style="border: 1px solid rgb(112, 112, 112);"required><br>
+                <input type="text" placeholder="Нікнейм" name="nickname" class="username" style="border: 1px solid rgb(112, 112, 112);" required maxlength="12">
+                <input type="password" placeholder="Пароль" name="password" class="password" style="border: 1px solid rgb(112, 112, 112);"required minlength="12">
+                <input type="submit" value="Зареєструватись" style="margin-top: 8px; background:#383B40; color:#8d8d8d; " class='submit'>
+            </form>
+        </div>      
+        <div class="reg-footer" style="background:#383B40; color: #6b6b6b;font-size: 14px; padding-top:15px; text-align: center;">
+            У вас є обліковий запис? <a href="#modal-one" style="text-decoration: none; font-weight: 700; color:rgb(153, 28, 255);">Увійдіть</a>
+        </div>
+    </div>
+</body>
+</html>

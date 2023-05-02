@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>CSS-це ♥ HTMLcase</title>
+</head>
+<body>
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo2.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username"style="" required><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password"style="" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px;" class='submit'>
+                  </form>
+                <p class='warn'><span>Щоб перейти потрібно увійти.</span></p>
+            </div>
+            <div class="modal-footer" style="color: #262626;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="registration.html" style="text-decoration: none; font-weight: 700;color: #721aba;">Зареєструйтеся</a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827">
+                            <a href="indexhtml.html" aria-current="page">HTML</a></li>
+                        <li><span style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        font-family: 'Arimo', sans-serif;
+                        font-weight: bold;
+                        transition:.3s linear;
+                        cursor: pointer;">
+                            CSS</span></li>
+                        <li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975">
+                            <a href="indexjs.html">JS</a></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    <div class="container">
+        <div class="csstitle">
+            <h1 style=
+                "font-size: 46px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">CSS</h1>
+                <p style="line-height: 10px; margin-top: -30px; margin-bottom: 60px; font-size: smaller;">(англ. Cascading Style Sheets — Каскадні Таблиці Стилів)</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+            <p><span  style="font-weight: 550;"> - це мова для управління зовнішнім виглядом HTML-документа.</span></p>
+            
+            <p>За допомогою CSS можна задавати параметри відображення будь-якого тега веб-сайту: ширину і висоту, відступи, колір і розмір шрифту, фон і так далі.</p>
+    
+            <p><span  style="font-weight: 550;">Структура CSS</span></p>
+                
+            <p>CSS складається з селекторів і властивостей:</p>
+                
+            <p style="font-size: small;">селектор: {<br>
+                властивість 1: значення1;<br>
+                властивість 2: значення2;<br>
+                ...<br>
+                }</p>
+
+            <p>За допомогою селекторів можна сказати браузеру які саме елементи ми хочемо оформити. Властивості описують як саме ми хочемо оформити ці елементи. Тобто селектори - це снайперський приціл, а властивості - це кисть, рубанок, скальпель і перфоратор.
+            </p>
+
+            <p>Існує величезна кількість CSS-властивостей, які впливають практично на всі аспекти відображення елементів.</p>
+
+            <p>Причому кожній властивості відповідає певний набір значень.</p>
+
+            <p>Перевага стилів полягає в тому, що ви можете швидко і гнучко змінювати зовнішній вигляд потрібних елементів.</p>
+        </div>
+    </div>
+        <div class="sidebar">
+            <ul class="list2b">
+              
+              <li><a href="#modal-one"> CSS </a><a href="#"></a></li>
+              <li><a href="#modal-one"> Теги. Списки</a></li>
+              <li><a href="#modal-one">Гіперпосилання. Зображення</a></li>
+              <li><a href="#modal-one">Таблиці</a></li>
+              <li><a href="#modal-one">Форми</a></li>
+              <li><a href="#modal-one">Блочна модель</a></li>
+              <li><a href="#modal-one">Аудіо, відео</a></li>
+            </ul>
+        </div>
+</main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexcss.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexcss.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+        <a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>
