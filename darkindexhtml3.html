@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HTML-це ♥ HTMLcase</title>
+</head>
+<body style="background-color: #2D2F34">
+<header>
+    <div class="container" style="background-color:#383B40;">
+        <a class="headerlogo" href="darkindex.html"> 
+			<img src="htmlcaselogo.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li><span  id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827" style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        font-family: 'Arimo', sans-serif;
+                        font-weight: bold;
+                        transition:.3s linear;
+                        cursor: pointer;">
+                            HTML</span></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="darkindexcss.html" style="color:rgb(153, 28, 255)">CSS</a></li>
+                        <li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975">
+                            <a href="darkindexjs.html" style="color:rgb(153, 28, 255)">JS</a></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html" style="color:rgb(153, 28, 255)">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/" style="color:rgb(153, 28, 255)">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search" style="background-color:#383B40">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main style="color:lightgrey">
+    <div class="darkcontainer">
+            <div class="htmltitle">
+                <h1 style=
+                    "font-size: 32px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    padding: 0 0 15px;
+                    ">Гіперпосилання. Зображення</h1>
+                <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Що таке посилання, адреси? Як зробити випливаючу підказку? Як зробити посилання на іншу сторінку HTML?</p>
+            </div>
+            <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+    
+                <p><span  style="font-weight: 550;">Що таке посилання?</span></p>
+                
+                <p>Тег &lt;a href="..."&gt;...&lt;/a&gt;</p> 
+               
+                <p>Посилання зазвичай виглядає як підкреслена частина тексту, клацаючи на яку ви переходите на іншу сторінку, відкриваєте зображення або починаєте завантажувати файл.</p>
+                
+                <p>Якщо уявити, що інтернет це величезна мережа з безліччю вузлів, то посилання будуть нитками, що з'єднують всі вузли цієї мережі.</p>
+              
+                <p>Посилання створюються за допомогою дуже простого і короткого тегу &lt;a&gt;.</p>
+                
+                <p>Але тег &lt;a&gt; без адреси непотрібний, оскільки він описує посилання, яка нікуди не веде. Тому адреса посилання задається за допомогою атрибуту href:</p> 
+                <div class="darkex" style="line-height:5px;" >
+                    <p>&lt;a href="http://man.adr.com.ua"&gt;Веб-програмування&lt;/a&gt;</p>
+                </div>
+                <p>У посилання в прикладі задано адресу http://man.adr.com.ua.</p>
+                
+                <p>Значенням атрибута є URL, який зазвичай називають просто адреса. </p>
+                
+                <p><span  style="font-weight: 550;">Адреси</span></p>
+    
+                <p>Адреси бувають різні: абсолютні, відносні, що вказують на сторінку, на файл, зображення, що містять якір(мітку) і так далі.</p>
+                
+                <p><span  style="font-weight: 550;">Абсолютні адреси</span></p>
+    
+                <p>Абсолютні адреси містять в собі протокол, ім'я сервера і шлях. Наприклад, в адресі http://man.adr.com.ua/html</p>
+    
+                <p style="font-size: small;">http: // - це протокол<br>
+                    man.adr.com.ua - ім'я сервера, також називається домен або хост<br>
+                    /html - шлях<br></p>
+                
+                <p>Абсолютна адреса хороша тим, що однозначно вказує розташування документа.</p>
+    
+                
+    
+                <p><span  style="font-weight: 550;">Відносні адреси</span></p>
+    
+                <p>У відносних адресах немає ні протоколу, ні імені сервера, а шлях не починається із слеша /. Ось приклади відносних адрес:</p>
+    
+                <p style="font-size: small;">courses/1<br>
+                ./courses<br>
+                ../../run/1<br></p>
+    
+                <p>У відносних адресах можуть використовуватися спеціальні символи, аналогічні символам в шляхах файлових систем:. і ...</p>
+    
+                <p><span  style="font-weight: 550;">Посилання на файл</span></p>
+    
+                <p>Посилання може вказувати на будь-яку веб-сторінку, на будь-який файл. Якщо клацнути по посиланню, що веде на файл, то браузер запропонує його завантажити.</p>
+    
+                <p><span  style="font-weight: 550;">Посилання з якорем #</span></p>
+    
+                <p>Посилання з якорем зазвичай використовуються для створення навігації усередині сторінки.</p>
+    
+                <p>Посилання з якорем містить символ #, після якого йде ідентифікатор. Ідентифікатор створюється за допомогою атрибуту id, який може бути заданий у будь-якого тега.</p>
+    
+                <p>Можна задати адресу, що складається з одного якоря, наприклад:</p>
+                <div class="darkex" style="line-height:5px;" >
+                <p>&lt;a href="#rozdil1"&gt; розділ 1 &lt;/a&gt;</p>
+                </div>
+                <p>При клацанні на таке посилання браузер знайде на сторінці елемент з атрибутом id зі значенням rozdil1 і прокрутить вікно сторінки до нього. Тобто перезавантаження сторінки не відбудеться.</p>
+                
+                <p><span  style="font-weight: 550;">Додамо зображення</span></p>
+    
+                <p>Щоб додати на сторінку зображення, потрібно використовувати непарний тег &lt;img&gt; з атрибутом src, в якому вказана адреса картинки. наприклад:</p>
+                <div class="darkex" style="line-height:5px;" >
+                <p>&lt;img src = "logo.png"&gt;</p>
+                </div>
+                
+                <p><span  style="font-weight: 550;">Зображення-посилання</span></p>
+                <p>Посилання можна робити не тільки за допомогою тексту, але і за допомогою зображень. Для цього потрібно обернути тег &lt;img&gt; в тег &lt;a&gt;. Наприклад:</p>
+                <div class="darkex" style="line-height:5px;" >
+                <p>&lt;a href="man.adr.com.ua"&gt;</p>
+                <p>&lt;img src = "logo.png" alt = "Логотип"&gt;</p>
+                <p>&lt;/a&gt;</p>
+                </div>
+            </div>
+        </div>
+            <div class="sidebar">
+            <ul class="darklist2b">
+              
+              <li><a href="darkindexhtml.html"> HTML. Веб-сторінка. </a><a href="#"></a></li>
+              <li><a href="darkindexhtml2.html">Основні теги HTML5</a>
+              <li style="border: 2px solid rgb(153, 28, 255); background: #564d5e; border-radius: 3px;"><a href="">Гіперпосилання. Зображення</a></li>
+              <li><a href="darkindexhtml4.html">Таблиці</a></li>
+              <li><a href="darkindexhtml5.html">Форми</a></li>
+              <li><a href="darkindexhtml6.html">Блочна модель</a></li>
+              <li><a href="darkindexhtml7.html">Аудіо, відео</a></li>
+            </ul>
+            </div>
+</main>
+<footer>
+    <div id="darkokno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px ;width:15px;height:15px;border:0;"></a></span>
+        <a href="indexhtml3.html" title="Перейти на світлу тему" class="lighttheme" style="width:35px;height:35px;">
+        </a>
+        <li style="list-style:none;padding-left: 40px;"><a href="indexhtml3.html" title="Перейти на світлу тему" style="display:block; padding-left:10px; padding-right:10px; color: lightgrey;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Light mode</span></a></li>
+           
+        </div>
+    <div class="foot" style="background:#383B40;">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+                
+        <a href="#darkokno" ><img src="darkoptions.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+        
+    </div>
+        
+        
+        
+        
+        
+</footer>
+        
+</body>
+</html>

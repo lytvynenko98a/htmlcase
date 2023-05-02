@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JavaScript-це ♥ HTMLcase</title>
+</head>
+<body>
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo2.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username" required><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px;" class='submit'>
+                  </form>
+                <p class='warn'><span>Щоб перейти потрібно увійти.</span></p>
+            </div>
+            <div class="modal-footer" style="color: #262626;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="registration.html" style="text-decoration: none; font-weight: 700;color: #721aba;">Зареєструйтеся</a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827">
+                            <a href="indexhtml.html" aria-current="page">HTML</a></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                            <li><span style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-family: 'Arimo', sans-serif;
+                            font-weight: bold;
+                            transition:.3s linear;
+                            cursor: pointer;">
+                                JS<span></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    <div class="container">
+        <div class="jstitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Умови</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Базові поняття. Що таке "умовні оператори"? "if"?</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+            
+<p><span  style="font-weight: 550;">Умовні оператори: if, '?'</span></p>
+<p></p>
+<p></p>
+<p>Іноді, залежно від умови, потрібно виконувати різні дії. Для цього використовується оператор if.</p>
+<p>Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var year = prompt ('У якому році з'явилася специфікація ECMA-262 5.1 ?', ' ');</p>
+<p>if (year != 2011) alert ('А ось і неправильно!');</p>
+</div>
+<p></p>
+<p><span  style="font-weight: 550;">Оператор if</span></p>
+<p>Оператор if («якщо») отримує умову, у прикладі вище це year != 2011. Він обчисює її, і якщо результат - true, то виконує команду.</p>
+<p>Якщо потрібно виконати більше однієї команди - вони оформляються блоком коду в фігурних дужках:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>if (year ! = 2011) {</p>
+<p></p>
+<p>alert ( 'А ось ..' );</p>
+<p></p>
+<p>alert ('..і неправильно!' );</p>
+<p>}</p>
+</div>
+<p>Рекомендується використовувати фігурні дужки завжди, навіть коли команда одна.</p>
+<p>Це покращує читабельність коду.</p>
+<p></p>
+<p></p>
+<p><span  style="font-weight: 550;">Перетворення до логічного типу</span></p>
+<p>Оператор if (...) обчислює і перетворює вираз в дужках до логічного типу.</p>
+<p>У логічному контексті:</p>
+<p>- Число 0, порожній рядок "", null і undefined, а також NaN є false,</p>
+<p>- Решта значень - true.</p>
+<p>Наприклад, така умова ніколи не виконається:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>if (0) { // 0 перетвориться до false ...</p>
+<p>}</p>
+</div>
+<p>... А така - виконається завжди:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>if (1) { // 1 перетвориться до true ...</p>
+<p>}</p>
+</div>
+<p>Можна і просто передати вже готове логічне значення, наприклад, заздалегідь обчислене в змінній:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var cond = (year != 2011); // True / false</p>
+<p>if (cond) {</p>
+<p></p>
+<p>...</p>
+<p>}</p>
+</div>
+<p></p>
+<p><span  style="font-weight: 550;">Невірна умова, else</span></p>
+<p>Необов'язковий блок else («інакше») виконується, якщо умова невірна:</p>
+<p></p>
+<p> </p>
+<div class="ex" style="line-height:5px;" >
+<p>var year = prompt ( 'Введіть рік, у якому зявився стандарт ECMA-262 5.1', ​​' ' );</p>
+<p></p>
+<p>if (year == 2011) {</p>
+<p></p>
+<p>alert ( 'Та ви знавець!' );</p>
+<p>} еlse {</p>
+<p></p>
+<p>alert ( 'А ось і неправильно!' ); // Будь-яке значення, крім 2011</p>
+<p>}</p>
+</div>
+<p></p>
+<p><span  style="font-weight: 550;">Декілька умов, else if</span></p>
+<p>Буває потрібно перевірити кілька варіантів умови. Для цього використовується блок else if .... Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var year = prompt ( 'У якому році з'явилася специфікація ECMA-262 5.1?', ' ' );</p>
+<p>if (year < 2011) {</p>
+<p></p>
+<p>alert ( 'Це занадто рано ..' );</p>
+<p>} else if (year > 2011) {</p>
+<p></p>
+<p>alert ( 'Це запізно ..' );</p>
+<p>} else {</p>
+<p></p>
+<p>alert ( 'Так, справді в цьому році!');</p>
+<p>}</p>
+</div>
+<p>У прикладі вище JavaScript спочатку перевірить першу умову, якщо вона хибна - перейде до другої - і так далі, до останнього else.</p>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">Оператор знак питання "?"</span></p>
+<p>Іноді потрібно залежно від умови привласнити змінну. Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p></p>
+<p>var access;</p>
+<p>var age = prompt ( 'Скільки вам років?', ' ' );</p>
+<p>if (age > 14) {</p>
+<p></p>
+<p>access = true;</p>
+<p>} еlse {</p>
+<p></p>
+<p>access = false;</p>
+<p>}</p>
+<p>alert (access);</p>
+<p> </p>
+</div>
+<p>Оператор знак питання '?' дозволяє робити це коротше і простіше.</p>
+<p>Він складається з трьох частин:</p>
+<p></p>
+<p></p>
+<p>умова ? значення1 : значення2</p>
+<p></p>
+<p></p>
+<p>Перевіряється умова, потім коли вона вірна - повертається значення1, якщо невірна - значення2, наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>access = (age > 14) ? true : false;</p>
+</div>
+<p></p>
+<p>Оператор '?' виконується після більшості інших, зокрема - пізніше порівнянь, тому дужки можна не ставити:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>access = age > 14 ? true : false;</p>
+</div>
+<p></p>
+<p>... Але коли дужки є - код краще читається. Так що рекомендується їх писати.</p>
+<p> </p>
+<p></p>
+<p>На замітку:</p>
+<p>В даному випадку можна було б обійтися і без оператора '?', бо порівняння само по собі вже повертає true / false:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>access = age > 14;</p>
+</div>
+<p></p>
+<p><span  style="font-weight: 550;">«Тернарний оператор»</span></p>
+<p>Знак питання - єдиний оператор, у якого є аж три аргументи, у той час як у звичайних операторів їх один-два. Тому його називають «тернарний оператор».</p>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">Кілька операторів "?"</span></p>
+<p>Послідовність операторів ' ? ' дозволяє повернути значення в залежності не від однієї умови, а від декількох.</p>
+<p></p>
+<p></p>
+<p>Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var age = prompt ( 'вік?' , 18);</p>
+<p>var message = (age < 3) ? 'Здрастуй, малюк!' : (age < 18) ? 'Вітання!' : (age < 100)? 'Вітаю!' : 'Який незвичайний вік!';</p>
+<p>alert (message);</p>
+</div>
+<p></p>
+<p>Спочатку може бути складно зрозуміти, що відбувається. Однак, уважно придивившись, ми помічаємо, що це звичайна послідовна перевірка!</p>
+<p>Знак питання перевіряє спочатку age < 3, якщо вірно - повертає 'Здрастуй, малюк!', Якщо ні - йде за "дві крапки" і перевіряє age < 18. Якщо це вірно - повертає 'Привіт!', інакше перевірка age < 100 і 'Вітаю! '... І нарешті, якщо нічого з цього не вірно, то ' Який незвичайний вік! '.</p>
+<p> </p>
+<p></p>
+<p>Те ж саме через if..else:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>if (age < 3) {</p>
+<p></p>
+<p>message = 'Здрастуй, малюк!';</p>
+<p>} else if (age < 18) {</p>
+<p></p>
+<p>message = 'Привіт!';</p>
+<p>} else if (age < 100) {</p>
+<p></p>
+<p>message = 'Вітаю!';</p>
+<p>} else {</p>
+<p></p>
+<p>message = 'Який незвичайний вік!';</p>
+<p>}</p>
+</div>
+<p></p>
+<p><span  style="font-weight: 550;">Нетрадиційне використання "?"</span></p>
+<p>Іноді оператор знак питання ' ? ' використовують як заміну if:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p></p>
+<p>var company = prompt ( 'Яка компанія створила JavaScript?', ' ');</p>
+<p>(company == 'Netscape') ?</p>
+<p></p>
+<p>alert( 'Так, вірно' ): alert( 'Неправильно' );</p>
+</div>
+<p>Працює це так: залежно від умови, буде виконана або перша, або друга частина після '?'.</p>
+<p> </p>
+<p></p>
+<p>Результат виконання не присвоюють в змінну, так що він пропаде (втім, alert нічого не повертає).</p>
+<p></p>
+<p></p>
+<p>Рекомендується не використовувати знак питання таким чином.</p>
+<p></p>
+<p></p>
+<p>Незважаючи на те, що з вигляду такий запис коротше if, він є менш читабельним.</p>
+<p>Ось, для порівняння, те ж саме з if:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var company = prompt ('Яка компанія створила JavaScript?', '');</p>
+<p>if (company == 'Netscape') {</p>
+<p></p>
+<p>alert ( 'Так, вірно' );</p>
+<p>else {</p>
+<p></p>
+<p>alert ('Неправильно');</p>
+<p>}</p>
+</div>
+<p></p>
+<p>При читанні коду око йде вертикально і конструкції, що займають кілька рядків, зі зрозумілою вкладеністю, сприймаються набагато легше. Можливо, ви й самі відчуєте, пробігшись очима, що синтаксис з if більш простий і очевидний ніж з оператором '?'.</p>
+<p>Сенс оператора '?' - Повернути те чи інше значення, залежно від умови. Будь ласка, використовуйте його за призначенням, а для виконання різних гілок коду є if.</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul class="list2b">
+          
+        <li><a href="indexjs.html">Про JavaScript</a></li>
+        <li><a href="indexjs2.html">Змінні</a></li>
+        <li><a href="indexjs3.html"> Типи даних</a></li>
+        <li><a href="indexjs4.html">Масиви</a></li>
+        <li><a href="indexjs5.html">Арифметика. Присвоєння</a></li>
+        <li><a href="indexjs6.html">Взаємодія з користувачем</a></li>
+        <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Умови</a></li>
+        <li><a href="indexjs8.html">Цикли</a></li>
+        <li><a href="indexjs9.html">Функції. Область видимості</a></li>
+        <li><a href="indexjs10.html">DOM</a></li>
+        <li><a href="indexjs11.html">Події</a></li>
+        <li><a href="indexjs12.html">jQuery</a></li>
+
+        </ul>
+    </div>
+</main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexjs7.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexjs7.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+        <a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>

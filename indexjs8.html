@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css"rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JavaScript-це ♥ HTMLcase</title>
+</head>
+<body>
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header" style="padding-top: 31px; padding-bottom: 31px; text-align: center;">
+                <img src="htmlcaselogo2.png" style="width:250px;">
+                 <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            </div>
+            <div class="modal-body">
+                <form style="margin:0 30px 6px;" class="login">
+                    <input type="text" placeholder="Номер телефону, ел. пошта..." name="username" class="username" required><br>
+                    <input type="password" placeholder="Пароль..." name="psw" class="password" required minlength="4">
+                    <input type="submit" value="Увійти" style="margin-top: 8px;" class='submit'>
+                  </form>
+                <p class='warn'><span>Щоб перейти потрібно увійти.</span></p>
+            </div>
+            <div class="modal-footer" style="color: #262626;font-size: 14px; padding-top:15px; text-align: center;">
+                Не маєте облікового запису? <a href="registration.html" style="text-decoration: none; font-weight: 700;color: #721aba;">Зареєструйтеся</a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <a class="headerlogo" href="index.html" target="blank"> 
+			<img src="htmlcaselogo2.png" style= "width:250px; margin-bottom: -25px;"></a>
+            <div class="menu-wrapper">
+                <div class="menu-header-container">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-3827" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3800 current_page_item menu-item-3827">
+                            <a href="indexhtml.html" aria-current="page">HTML</a></li>
+                        <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+                            <a href="indexcss.html">CSS</a></li>
+                            <li><span style="text-decoration:underline; color:#b04fff;position: relative;line-height: 61px; padding: 0 10px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-family: 'Arimo', sans-serif;
+                            font-weight: bold;
+                            transition:.3s linear;
+                            cursor: pointer;">
+                                JS<span></li>
+                        <li id="menu-item-11005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11005">
+                            <a href="https://html5book.ru/css-spravochnik.html">CSS-довідник</a></li>
+                        <li id="menu-item-10225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10225">
+                            <a href="https://html5book.ru/category/css-svoystva/">CSS-властивості</a></li>
+                        </li>
+                        <li class="search-box">
+                            <form class="search">
+                                <input type="text" placeholder="Пишіть тут...">
+                                <button type="submit"></button>
+                            </form>
+                        </li>
+                    </ul></div>      
+                    
+                        
+      
+            </div>
+    </div>
+</header> 
+<main>
+    <div class="container">
+        <div class="jstitle">
+            <h1 style=
+                "font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                padding: 0 0 15px;
+                ">Цикли While, For. Конструкція Switch.</h1>
+            <p style="line-height: 10px; margin-top: -20px; margin-bottom: 60px; font-size: smaller;">Базові поняття. Що таке "цикл" в JavaScript? Switch?</p>
+        </div>
+        <div class="htmlcontent" style="line-height: 30px; font-size: large; ">
+ 
+
+<p>При написанні скриптів часто постає завдання зробити однотипну дію багато разів.</p>
+<p></p>
+<p>Наприклад, вивести товари зі списку один за іншим. Або просто перебрати всі числа від 1 до 10 і для кожного виконати однаковий код.</p>
+<p></p>
+<p>Для багаторазового повторення однієї ділянки коду - передбачені <i>цикли</i>.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span  style="font-weight: 550;">Цикл while</span></p>
+<p></p>
+<p>Цикл while має вигляд:</p>
+<p></p>
+<p> </p>
+<div class="ex" style="line-height:5px;" >
+<p>while (умова) {</p>
+<p>// Код, тіло циклу</p>
+<p>}</p>
+</div>
+<p></p>
+<p>Поки умова вірна - виконується код з тіла циклу.</p>
+<p></p>
+<p>Наприклад, цикл нижче виводить i поки i &lt;3:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var i = 0;</p>
+<p>while (i&lt;3) {</p>
+<p>alert (i);</p>
+<p>i++;</p>
+<p>}</p>
+</div>
+<p>Повторення циклу по-науковому називається <i>«ітерація»</i>. Цикл у прикладі вище робить три ітерації.</p>
+<p></p>
+<p>Якби i++ в коді вище не було, то цикл виконувався б (у теорії) вічно. На практиці, браузер виведе повідомлення про "завислий скрипт" і відвідувач його зупинить.</p>
+<p></p>
+<p>Нескінченний цикл можна зробити і простіше:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>while (true) {</p>
+<p>// ...</p>
+<p>}</p>
+</div>
+<p>Умова в дужках інтерпретується як логічне значення, тому замість while (i != 0) зазвичай пишуть while (i):</p>
+<p></p>
+<p> </p>
+<div class="ex" style="line-height:5px;" >
+<p>var i = 3;</p>
+<p>while (i) {// при i, рівному 0, значення в дужках буде false і цикл зупиниться</p>
+<p>alert (i);</p>
+<p>i--;</p>
+<p>}</p>
+</div>
+<p></p>
+<p><span style="font-weight:550">Цикл do ... while</span></p>
+<p></p>
+<p>Перевірку умови можна поставити під тілом циклу, використовуючи спеціальний синтаксис do..while:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p> </p>
+<p></p>
+<p>do {</p>
+<p>// Тіло циклу</p>
+<p>} while (умова);</p>
+</div>
+<p></p>
+<p>Цикл, описаний, таким чином, спочатку виконує тіло, а потім перевіряє умову.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Наприклад:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var i = 0;</p>
+<p>do {</p>
+<p>alert (i);</p>
+<p>i ++;</p>
+<p>} while (i &lt;3);</p>
+</div>
+<p></p>
+<p>Синтаксис do..while рідко використовується, бо звичайний while наочніше - в ньому не доводиться шукати очима умову і ламати голову, чому вона перевіряється саме наприкінці.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">Цикл for</span></p>
+<p></p>
+<p>Найчастіше застосовується цикл for. Виглядає він так:</p>
+<p></p>
+<p> </p>
+<div class="ex" style="line-height:5px;" >
+
+<p>for (початок; умова; крок) {</p>
+<p>// ... Тіло циклу ...</p>
+<p>}</p>
+</div>
+<p></p>
+<p>Приклад циклу, який виконує alert (i) для i від 0 до 2 включно (до 3):</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var i;</p>
+<p>for (i = 0; i&lt;3; i++) {</p>
+<p>alert (i);</p>
+<p>}</p>
+</div>
+<p></p>
+<p>Тут:</p>
+<p></p>
+<p>Початок: i = 0.</p>
+<p>Умова: i &lt;3.</p>
+<p>Крок: i ++.</p>
+<p>Тіло: alert (i), тобто код всередині фігурних дужок (вони не обов'язкові, якщо тільки одна операція)</p>
+<p>Цикл виконується так:</p>
+<p></p>
+<p>Початок: i = 0 виконується один-єдиний раз, при заході в цикл.</p>
+<p>Умова: i &lt;3 перевіряється перед кожною ітерацією і при вході в цикл, якщо вона порушена, то відбувається вихід.</p>
+<p>Тіло: alert (i).</p>
+<p>Крок: i++ виконується після тіла на кожній ітерації, але перед перевіркою умови.</p>
+<p>Йти на крок 2.</p>
+<p>Іншими словами, потік виконання: початок → (якщо умова → тіло → крок) → (якщо умова → тіло → крок) → ... і так далі, поки вірна умова.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>На замітку:</p>
+<p>У циклі також можна визначити змінну:</p>
+<div class="ex" style="line-height:5px;" >
+    <p>         for (var i= 0; i&lt;3; i++) {</p>
+<p>alert (i); // 0, 1, 2</p>
+<p>}</p>
+</div>
+<p>Цю змінну буде видно і за межами циклу, зокрема, після закінчення циклу змінна i буде мати значення 3.</p>
+<p></p>
+<p> </p>
+<p></p>
+<div class="ex" style="line-height:5px;" >
+
+<p>Оголосити масив myArray=[1, 'text', 7, 'klklk' ];</p>
+</div>
+<p>Вивести всі елементи масиву та їх порядковий номер.</p>
+<p></p>
+<div
+ class="ex" style="line-height:5px;" >
+    <p></p>
+<p>var myArray=[1, 'text', 7, 'klklk' ];</p>
+<p></p>
+<p>for (var i = 0; i &lt; myArray.length; i++)</p>
+<p></p>
+<p>{</p>
+<p></p>
+<p>console.log ('i=' + i);</p>
+<p></p>
+<p>console.dir ('myArray [i]=' + myArray [i]);</p>
+<p></p>
+<p>console.log ('end of cycle');</p>
+<p></p>
+<p>}</p>
+<p></p>
+</div>
+<p></p>
+<p><span style="font-weight:550">Пропуск частин for</span></p>
+<p></p>
+<p>Будь-яка частина for може бути пропущена.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Можна забрати початок. Цикл в прикладі нижче повністю ідентичний наведеному вище:</p>
+<div class="ex" style="line-height:5px;" >
+<p>var i = 0;</p>
+<p></p>
+<p>for (; i&lt;3; i++) {</p>
+<p>alert (i); // 0, 1, 2</p>
+<p>}</p>
+<p> </p>
+</div>
+<p>Можна прибрати і крок:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var i = 0;</p>
+<p></p>
+<p>for (; i&lt;3;) {</p>
+<p>alert (i);</p>
+<p>// Цикл перетворився на аналог while (i&lt;3)</p>
+<p>}</p>
+</div>
+<p></p>
+<p>А можна і взагалі прибрати все, отримавши нескінченний цикл:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>for (;;) {</p>
+<p>// Буде виконуватися вічно</p>
+<p>}</p>
+</div>
+<p>При цьому самі крапки з комою; обов'язково повинні бути присутніми, інакше буде помилка синтаксису.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">for..in</span></p>
+<p>Існує також спеціальна конструкція for..in для перебору властивостей об'єкта.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">Переривання циклу: break</span></p>
+<p></p>
+<p>Вийти з циклу можна не тільки при перевірці умови але і, взагалі, в будь-який момент. Цю можливість забезпечує директива break.</p>
+<p></p>
+<p>Наступний код підраховує суму чисел, що вводяться до тих пір, поки відвідувач їх вводить, а потім - виводить суму.</p>
+<p> </p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var sum = 0;</p>
+<p></p>
+<p>while (true) {</p>
+<p></p>
+<p>  var value = + prompt ('Введіть число', ' '');</p>
+<p></p>
+<p>  if (!value) break; // (*)</p>
+<p></p>
+<p>  sum += value;</p>
+<p></p>
+<p>}</p>
+<p>alert ('Сума:' + sum);</p>
+</div>
+<p></p>
+<p>Директива break в рядку (*), якщо відвідувач нічого не ввів, повністю припиняє виконання циклу і передає керування на рядок за його тілом, тобто на alert.</p>
+<p></p>
+<p>Взагалі, поєднання «нескінченний цикл + break» - відмінна штука для тих ситуацій, коли умова, за якою потрібно перерватися, знаходиться не на початку чи не наприкінці циклу, а посередині.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">Наступна ітерація: continue</span></p>
+<p></p>
+<p>Директива continue припиняє виконання поточної ітерації циклу.</p>
+<p></p>
+<p>Вона - в деякому роді «молодша сестра» директиви break: перериває не весь цикл, а тільки поточне виконання його тіла, ніби воно закінчилося.</p>
+<p></p>
+<p>Її використовують, якщо зрозуміло, що на поточному повторі циклу робити більше нічого.</p>
+<p></p>
+<p>Наприклад, цикл нижче використовує continue, щоб не виводити парні значення:</p>
+<p></p>
+<div class="ex" style="line-height:5px;" >
+    <p></p>
+<p>  for (var i=0; i&lt;10; i++) {</p>
+<p></p>
+<p>  if (i % 2==0) continue;</p>
+<p></p>
+<p>  alert (i);</p>
+<p>}</p>
+</div>
+<p>Для парних i спрацьовує continue, виконання тіла припиняється і керування передається на наступний прохід for.</p>
+<p></p>
+<p>Директива continue дозволяє обійтися без дужок</p>
+<p>Цикл, який обробляє тільки непарні значення, міг би виглядати так:</p>
+<div class="ex" style="line-height:5px;" >
+    <p>for (var i=0; i&lt;10; i++) {</p>
+<p></p>
+<p>  if (i % 2) {</p>
+<p>alert (i);</p>
+<p>}</p>
+</div>
+<p>З технічної точки зору він повністю ідентичний. Дійсно, замість continue можна просто загорнути дії в блок if. Однак, ми отримали додатковий рівень вкладеності фігурних дужок. Якщо код всередині if довший, то це погіршує читабельність, на відміну від варіанту з continue.</p>
+<p></p>
+<p>Не можна використовувати break / continue праворуч від оператора "?"</p>
+<p>Зазвичай ми можемо замінити if на оператор знак питання '?'.</p>
+<p></p>
+<p>Тобто, запис:</p>
+<div class="ex" style="line-height:5px;" >
+    <p>if (умова) {</p>
+<p>a ();</p>
+<p>} else {</p>
+<p>b ();</p>
+<p>}</p>
+</div>
+<p>... Аналогічний запис:</p>
+<p></p>
+<p>умова? a (): b ();</p>
+<p>В обох випадках в залежності від умови виконується або a () або b ().</p>
+<p></p>
+<p>Але різниця полягає в тому, що оператор знак питання '?', використаний у другому записі, повертає значення.</p>
+<p></p>
+<p>Синтаксичні конструкції, які не повертають значень, не можна використовувати в операторі '?'.</p>
+<p></p>
+<p>До таких відносяться більшість конструкцій і, зокрема, break / continue.</p>
+<p></p>
+<p>Тому такий код призведе до помилки:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p><span style="color: rgb(212, 63, 63);">                             (i&gt;5) ? alert (i): continue;</span></p>
+</div>
+<p>Втім, як уже говорилося раніше, оператор знак питання '?' не варто використовувати таким чином. Це - всього лише ще одна причина, чому для перевірки умови переважно використовують if.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight: 550;"> Мітки для break / continue</span></p>
+<p></p>
+<p>Буває потрібно вийти одночасно з декількох рівнів циклу.</p>
+<p></p>
+<p>Наприклад, всередині циклу по i знаходиться цикл по j, і при виконанні деякої умови ми б хотіли вийти з обох циклів відразу:</p>
+<p></p>
+<p> </p>
+<div class="ex" style="line-height:5px;" >
+    <p>  outer: for (var i=0; i&lt;3; i++) {</p>
+<p></p>
+<p>  for (var j=0; j&lt;3; j++) {</p>
+<p></p>
+<p>    var input = prompt ('Значення в координатах' + i + ',' + j, ' ');</p>
+<p></p>
+<p>    // Якщо скасування введення або порожній рядок -</p>
+<p>// Завершити обидва циклу</p>
+<p>if (! input) break outer; // (*)</p>
+<p></p>
+<p>  }</p>
+<p>}</p>
+<p>alert ('Готово!');</p>
+</div>
+<p>У коді вище для цього використана мітка.</p>
+<p></p>
+<p>Мітка має вигляд "ім'я:", ім'я має бути унікальним. Вона ставиться перед циклом, ось так:</p>
+<div class="ex" style="line-height:5px;" >
+    <p>outer: for (var i=0; i&lt;3; i++) {...}</p>
+<p>Можна також виносити її на окремий рядок:</p>
+<p></p>
+<p>outer:</p>
+<p>for (var i=0; i&lt;3; i++) {...}</p>
+</div>
+<p>Виклик break outer шукає найближчий зовнішній цикл з такою міткою і переходить в його кінець.</p>
+<p></p>
+<p>В наведеному вище прикладі це означає, що буде розірваний самий зовнішній цикл і управління перейде на alert.</p>
+<p></p>
+<p>Директива continue також може бути використана з міткою, в цьому випадку управління перестрибне на наступну ітерацію циклу з міткою.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">Висновок</span></p>
+<p></p>
+<p>JavaScript підтримує три види циклів:</p>
+<p></p>
+<p>while - перевірка умови перед кожним виконанням.</p>
+<p>do..while - перевірка умови після кожного виконання.</p>
+<p>for - перевірка умови перед кожним виконанням, а також додаткові настройки.</p>
+<p>Щоб організувати нескінченний цикл, використовують конструкцію while (true). При цьому він, як і будь-який інший цикл, може бути перерваний директивою break.</p>
+<p></p>
+<p>Якщо на даній ітерації циклу робити більше нічого не треба, але повністю припиняти цикл не слід - використовують директиву continue.</p>
+<p></p>
+<p>Обидві цих директиви підтримують «мітки», які ставляться перед циклом. Мітки - єдиний спосіб для break / continue вплинути на виконання зовнішнього циклу.</p>
+<p></p>
+<p>Зауважимо, що мітки не дозволяють стрибнути в довільне місце коду, в JavaScript немає такої можливості.</p>
+<p></p>
+<div class="ex" style="line-height:5px;" >
+    <p>var company = prompt ('Яка компанія створила JavaScript?', '');</p>
+<p></p>
+<p>if (company == 'Netscape') {</p>
+<p>alert ('Так, вірно');</p>
+<p>} else {</p>
+<p>alert ('Неправильно');</p>
+<p>}</p>
+</div>
+<p>При читанні коду очі йдуть вертикально і конструкції, що займають кілька рядків, зі зрозумілою вкладеністю, сприймаються набагато легше. Можливо, ви й самі відчуєте, пробігшись очима, що синтаксис з if більш простий і очевидний ніж з оператором '?'.</p>
+<p></p>
+<p>Сенс оператора '?' - Повернути те чи інше значення, залежно від умови. Будь ласка, використовуйте його за призначенням, а для виконання різних гілок коду є if.</p>
+<p></p>
+<p></p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">Конструкція switch</span></p>
+<p></p>
+<p>Конструкція switch замінює відразу декілька if.</p>
+<p></p>
+<p>Вона являє собою більш наочний спосіб порівняти вираз відразу з декількома варіантами.</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>Виглядає вона так:</p>
+<div
+ class="ex" style="line-height:5px;" >
+    <p>switch(x) {</p>
+<p>case 'value1': // if (x === 'value1')</p>
+<p>...</p>
+<p>[break]</p>
+<p></p>
+<p>case 'value2': // if (x === 'value2')</p>
+<p>...</p>
+<p>[break]</p>
+<p></p>
+<p>default:</p>
+<p>...</p>
+<p>[break]</p>
+<p>}</p>
+<p></p>
+</div>
+<p></p>
+<p>Зммінна x перевіряється на строгу рівність першому значенню value1, потім другу value2 і так далі.</p>
+<p>Якщо відповідність встановлено - switch починає виконуватися від відповідної директиви case і далі, до найближчого break (або до кінця switch).</p>
+<p>Якщо жоден case не співпав - виконуєтьcя (якщо є) варіант default.</p>
+<p> </p>
+<p></p>
+<p>При цьому case називають варіантами switch.</p>
+<p></p>
+<p></p>
+<p>Приклад використання switch :</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var a = 2 + 2;</p>
+<p>switch (a) {</p>
+<p></p>
+<p>case 3:</p>
+<p></p>
+<p>alert ('Малувато');</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p>case 4:</p>
+<p></p>
+<p>alert ('В точку!');</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p>case 5:</p>
+<p></p>
+<p>alert ('Перебір');</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p>default:</p>
+<p></p>
+<p>alert ('Я таких значень не знаю');</p>
+<p>}</p>
+<p> </p>
+</div>
+<p>Тут оператор switch послідовно порівняє a з усіма варіантами з case.</p>
+<p>Спочатку 3, потім - так як немає збігу - 4. Збіг знайдено, буде виконаний цей варіант, з рядка alert ('В точку!') І далі, до найближчого break, який перерве виконання.</p>
+<p>Якщо break немає, то виконання піде нижче за наступними case, при цьому інші перевірки ігноруються.</p>
+<p> </p>
+<p></p>
+<p>Приклад без break:</p>
+<div class="ex" style="line-height:5px;" >
+
+
+<p>var a = 2 + 2;</p>
+<p>switch (a) {</p>
+<p></p>
+<p>case 3:</p>
+<p></p>
+<p>alert ('Малувато');</p>
+<p></p>
+<p>case 4:</p>
+<p></p>
+<p>alert ('В точку!');</p>
+<p></p>
+<p>case 5:</p>
+<p></p>
+<p>alert ('Перебір');</p>
+<p></p>
+<p>default:</p>
+<p></p>
+<p>alert ('Я таких значень не знаю');</p>
+<p>}</p>
+<p> </p>
+</div>
+<p>В наведеному вище прикладі послідовно виконаються три alert:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>alert ('В точку!');</p>
+<p>alert ('Перебір');</p>
+<p>alert ('Я таких значень не знаю');</p>
+</div>
+<p></p>
+<p>У case можуть бути будь-які вирази, в тому числі які включають в себе змінні і функції.</p>
+<p> </p>
+<p></p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var a = 1;</p>
+<p>var b = 0;</p>
+<p>switch (a) {</p>
+<p></p>
+<p>case b + 1:</p>
+<p></p>
+<p>alert (1);</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p> </p>
+<p></p>
+<p>default:</p>
+<p></p>
+<p>alert ('ні-ні, виконається варіант вище')</p>
+<p>}</p>
+</div>
+<p></p>
+<p><span style="font-weight:550">Групування case</span></p>
+<p> </p>
+<p></p>
+<p>Кілька значень case можна групувати.</p>
+<p></p>
+<p></p>
+<p>У прикладі нижче case 3 і case 5 виконують один і той же код:</p>
+<div class="ex" style="line-height:5px;" >
+
+<p>var a = 2 + 2;</p>
+<p></p>
+<p>switch (a) {</p>
+<p></p>
+<p>case 4:</p>
+<p></p>
+<p>alert ('Вірно!');</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p>case 3: // (*)</p>
+<p></p>
+<p>case 5: // (**)</p>
+<p></p>
+<p>alert ('Невірно!');</p>
+<p></p>
+<p>alert ('Трохи помилилися, буває.');</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p>default:</p>
+<p></p>
+<p>alert ('Дивний результат, дуже дивний');</p>
+<p>}</p>
+</div>
+<p></p>
+<p>При case 3 виконання йде з рядка (*), при case 5 - з рядка (**).</p>
+<p> </p>
+<p></p>
+<p><span style="font-weight:550">Тип має значення</span></p>
+<p> </p>
+<p></p>
+<p>Наступний приклад приймає значення від відвідувача.</p>
+<p></p>
+<div class="ex" style="line-height:5px;" >
+    <p></p>
+<p>var arg = prompt ("Введіть arg?")</p>
+<p>switch (arg) {</p>
+<p></p>
+<p>case '0':</p>
+<p></p>
+<p>case '1':</p>
+<p></p>
+<p>alert ('Один або нуль');</p>
+<p></p>
+<p>case '2':</p>
+<p></p>
+<p>alert ('Два');</p>
+<p></p>
+<p>break;</p>
+<p></p>
+<p>case 3: alert ('Ніколи не виконається');</p>
+<p></p>
+<p>default: alert ('Невідоме значення:' + arg)</p>
+<p>}</p>
+</div>
+<p>Що воно виведе при введенні числа 0? Числа 1? 2? 3?</p>
+<p></p>
+<p>При введенні 0 виконається перший alert, далі виконання продовжиться вниз до першого break і виведе другий alert ('Два'). Разом, два виводи alert.</p>
+<p>При введенні 1 відбудеться те ж саме.</p>
+<p>При введенні 2, switch перейде до case '2', і спрацює єдиний alert ('Два').</p>
+<p>При введенні 3, switch перейде на default. Це тому, що prompt повертає рядок '3', а не число. Типи різні. Оператор switch передбачає суворе рівність ===, так що збігу не буде.   </p>
+
+       </div> 
+    </div>
+    <div class="sidebar">
+        <ul class="list2b">
+          
+        <li><a href="indexjs.html">Про JavaScript</a></li>
+        <li><a href="indexjs2.html">Змінні</a></li>
+        <li><a href="indexjs3.html"> Типи даних</a></li>
+        <li><a href="indexjs4.html">Масиви</a></li>
+        <li><a href="indexjs5.html">Арифметика. Присвоєння</a></li>
+        <li><a href="indexjs6.html">Взаємодія з користувачем</a></li>
+        <li><a href="indexjs7.html"> Умови</a></li>
+        <li style="border: 2px solid #721aba; background: #f4e6ff; border-radius: 3px;"><a href="">Цикли</a></li>
+        <li><a href="indexjs9.html">Функції. Область видимості</a></li>
+        <li><a href="indexjs10.html">DOM</a></li>
+        <li><a href="indexjs11.html">Події</a></li>
+        <li><a href="indexjs12.html">jQuery</a></li>
+
+        </ul>
+    </div>
+</main>
+<footer>
+    <div id="okno">
+        <span><a href="#" class="close" title="Закрити" style="padding-left:30px; margin-top:1px;width:15px;height:15px;border:0;"></a></span>
+            <a href="darkindexjs8.html" title="Перейти на темну тему" class="darktheme" style="width:35px;height:35px;">
+            </a>
+            <li style="list-style:none;padding-left: 40px;"><a href="darkindexjs8.html" title="Перейти на темну тему" style="display:block; padding-left:10px; padding-right:10px; color:#656363;font-size: smaller;font-weight: 700;text-decoration: none;"><span style="display:sticky;">Dark mode</span></a></li>
+    </div>
+    <div class="foot">
+        <span class="acronym" title="При копіюванні інформації активне посилання на цей сайт обов'язкова!">© Copyright 2019-2020</span>
+        
+        <a href="#okno" ><img src="options.png"style="width:35px;height:35px;border:0; float:right;padding-bottom:10px; padding-left:10px;"></a>
+
+    </div>
+</footer>
+</body>
+</html>
